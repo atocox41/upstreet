@@ -1,0 +1,813 @@
+/* .homeApp .topBar {
+  top: 50px !important;
+} */
+
+/* */
+
+.homeApp {
+  --headerHeight: 62px;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+/* */
+
+.homeApp .form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+.homeApp .form .textarea {
+  height: 200px;
+}
+.homeApp .form .label {
+  display: flex;
+}
+.homeApp .form .rangeInput {
+  flex: 1;
+}
+.homeApp .form .buttons {
+  display: flex;
+}
+
+/* */
+
+.homeApp .items {
+  display: flex;
+  flex-direction: column;
+}
+.homeApp .items .item {
+  display: flex;
+}
+.homeApp .items .item .wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 256px;
+  /* min-height: 256px; */
+}
+.homeApp .items .item .button {
+  cursor: pointer;
+}
+.homeApp .items .item .button > img {
+  width: 32px;
+  height: 32px;
+}
+.homeApp .items .item .wrap .cornerButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+/* */
+
+.homeApp .sceneItems .sceneItem .img {
+  width: 512px;
+  height: 256px;
+}
+.homeApp .sceneItems .sceneItem .json {
+  font-family: monospace;
+  max-width: 400px;
+  max-height: 200px;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 5px;
+  color: #FFF;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.homeApp .sceneItems .sceneItem .label {
+  display: flex;
+}
+
+/* */
+
+.homeApp .cardItems .cardItem .img {
+  max-width: 256px;
+  max-height: 256px;
+  object-fit: cover;
+}
+.homeApp .cardItems .cardItem .textarea {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 256px;
+}
+.homeApp .cardItems .cardItem .wrap {
+  display: flex;
+  flex-direction: column;
+}
+.homeApp .cardItems .cardItem .wrap .name,
+.homeApp .cardItems .cardItem .wrap .description,
+.homeApp .cardItems .cardItem .wrap .text
+{
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.homeApp .cardItems .cardItem .wrap .name {
+  font-size: 24px;
+}
+.homeApp .cardItems .cardItem .wrap .description {
+  font-size: 16px;
+}
+.homeApp .cardItems .cardItem .wrap .text {
+  font-size: 13px;
+}
+.homeApp .cardItems .cardItem .wrap .text b {
+  font-weight: 900;
+}
+
+/* */
+
+.homeApp .lorebookItems .lorebookItem .img {
+  max-width: 256px;
+  max-height: 256px;
+  object-fit: cover;
+}
+.homeApp .lorebookItems .lorebookItem .textarea {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 256px;
+}
+.homeApp .lorebookItems .lorebookItem .wrap {
+  display: flex;
+  flex-direction: column;
+}
+.homeApp .lorebookItems .lorebookItem .wrap .name,
+.homeApp .lorebookItems .lorebookItem .wrap .description,
+.homeApp .lorebookItems .lorebookItem .wrap .text
+{
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.homeApp .lorebookItems .lorebookItem .wrap .name {
+  font-size: 24px;
+}
+.homeApp .lorebookItems .lorebookItem .wrap .description {
+  font-size: 16px;
+}
+.homeApp .lorebookItems .lorebookItem .wrap .text {
+  font-size: 13px;
+}
+.homeApp .lorebookItems .lorebookItem .wrap .text b {
+  font-weight: 900;
+}
+
+/* */
+
+.homeApp .radios {
+  display: flex;
+}
+.homeApp .radios .label {
+  display: flex;
+}
+
+/* */
+
+.homeApp .skyboxes .skybox .img {
+  width: 256px;
+  height: 128px;
+}
+
+/* */
+
+.homeApp .itemItems .itemItem .img {
+  width: 256px;
+  height: 256px;
+  object-fit: cover;
+}
+.homeApp .itemItems .itemItem .img360 {
+  width: 512px;
+  height: 256px;
+}
+.homeApp .itemItems .itemItem .imgs {
+  display: flex;
+}
+.homeApp .items .item .imgs .img {
+  width: 32px;
+  height: 32px;
+}
+
+/* */
+
+.homeApp .header {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: var(--headerHeight);
+  z-index: 1;
+}
+.homeApp .header .tabs {
+  display: flex;
+  flex: 1;
+  background-color: #000;
+}
+.homeApp .header .tabs .tab {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+  color: #FFF;
+  font-family: 'WinchesterCaps';
+  font-size: 32px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* */
+
+.homeApp .content {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - var(--headerHeight));
+  padding-top: 10px;
+  overflow-y: scroll;
+}
+
+/* */
+
+.homeApp .header .tabs .tab .text {
+  position: relative;
+  z-index: 1;
+}
+.homeApp .header .tabs .tab .background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #181818;
+  /* transform: skewX(-22deg); */
+}
+.homeApp .header .tabs .tab.selected {
+  z-index: 1;
+}
+.homeApp .header .tabs .tab .background {
+  transition: transform 2s cubic-bezier(0, 1, 0, 1);
+}
+.homeApp .header .tabs .tab.selected .background,
+.homeApp .header .tabs .tab:hover .background
+{
+  background-color: #2196F3;
+}
+.homeApp .header .tabs .tab.active .background,
+.homeApp .header .tabs .tab:active .background
+{
+  background-color: #1976D2;
+  /* transform: scale(0.8) skewX(-22deg); */
+  transform: scale(0.8);
+}
+
+/* */
+
+.editorContent {
+  display: flex;
+  position: fixed;
+  top: var(--headerHeight);
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - var(--headerHeight));
+}
+
+/* */
+
+.editorContent .render {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  height: inherit;
+}
+/* .editorContent .render .gameScene {
+  width: 100vw;
+  height: calc(100vh - var(--headerHeight));
+} b*/
+.editorContent .render .canvasPlaceholder {
+  display: flex;
+  width: inherit;
+  height: inherit;
+}
+.editorContent .render .canvasPlaceholder .canvasPlaceholderWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  width: 400px;
+  margin: auto;
+  padding: 10px;
+  background-color: #EEE;
+  border-radius: 10px;
+}
+.editorContent .render .canvasPlaceholder .img {
+  width: 256px;
+  height: 256px;
+  opacity: 0.5;
+}
+.editorContent .render .canvasPlaceholder .text {
+  font-family: 'WinchesterCaps';
+  font-size: 50px;
+  letter-spacing: 1px;
+  color: #333;
+}
+.editorContent .render .canvasPlaceholder .subtext {
+  margin: 10px 0;
+  font-family: 'PlazaRegular';
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: #555;
+}
+
+/* */
+
+.editorContent .sidebar {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  background-image: linear-gradient(to right, #111, #333);
+}
+.editorContent .sidebar .subheader {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  color: #FFF;
+}
+.editorContent .sidebar .subheader .backButton {
+  display: flex;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.editorContent .sidebar .subheader .backButton .img {
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+}
+.editorContent .sidebar .subheader .text {
+  margin-top: 9px;
+  font-family: 'WinchesterCaps';
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+.editorContent .sidebar .palette {
+  display: flex;
+  flex-direction: column;
+}
+.editorContent .sidebar .palette .paletteTabs {
+  display: flex;
+  padding: 0 10px;
+}
+.editorContent .sidebar .palette .paletteTabs .paletteTab {
+  background-image: linear-gradient(to bottom, #111, #333);
+  border: 2px solid #FFFFFF20;
+  border-radius: 5px;
+  margin-right: 5px;
+  padding: 5px;
+  background-color: #333;
+  color: #FFF;
+  text-transform: capitalize;
+  cursor: pointer;
+  user-select: none;
+}
+.editorContent .sidebar .palette .paletteTabs .paletteTab:hover {
+  background-image: linear-gradient(to bottom, #444, #666);
+}
+.editorContent .sidebar .palette .paletteTabs .paletteTab:active {
+  background-image: linear-gradient(to bottom, #333, #555);
+}
+.editorContent .sidebar .palette .paletteTabs .paletteTab.selected {
+  background-image: linear-gradient(to bottom, #2196F3, #1976D2);
+}
+.editorContent .sidebar .palette .paletteItems .paletteItem {
+  position: relative;
+  display: inline-flex;
+  margin-top: 10px;
+  margin-left: 10px;
+  flex-direction: column;
+  border-radius: 10px;
+  user-select: none;
+  cursor: pointer;
+}
+.editorContent .sidebar .palette .paletteItems .paletteItem .background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: inherit;
+  background-size: cover;
+}
+.editorContent .sidebar .palette .paletteItems .paletteItem:hover .background {
+  filter: brightness(1.2);
+}
+.editorContent .sidebar .palette .paletteItems .paletteItem:active .background {
+  filter: brightness(0.8);
+}
+.editorContent .sidebar .palette .paletteItems .paletteItem.common .background {
+  background: radial-gradient(#B1B1B1, #79858E, #2D3237);
+}
+.editorContent .sidebar .palette .paletteItems .paletteItem.uncommon .background {
+  background-image: url('/images/rarities/uncommon.png');
+}
+.editorContent .sidebar .palette .paletteItems .paletteItem.rare .background {
+  background-image: url('/images/rarities/rate.png');
+}
+.editorContent .sidebar .palette .paletteItems .paletteItem.epic .background {
+  background-image: url('/images/rarities/epic.png');
+}
+.editorContent .sidebar .palette .paletteItems .paletteItem.legendary .background {
+  background-image: url('/images/rarities/legendary.png');
+}
+.editorContent .sidebar .palette .paletteItems .paletteItem.mythic .background {
+  background-image: url('/images/rarities/mythic.png');
+}
+.editorContent .sidebar .palette .paletteItems .paletteItem.exotic .background {
+  background-image: url('/images/rarities/exotic.png');
+}
+
+.editorContent .sidebar .palette .paletteItems .paletteItem .imgWrap {
+  --imgSize: 50px;
+
+  position: relative;
+  width: var(--imgSize);
+  height: var(--imgSize);
+  margin: 10px auto;
+  overflow: hidden;
+  pointer-events: none;
+}
+.editorContent .sidebar .palette .paletteItems .paletteItem .imgWrap .img {
+  width: inherit;
+  height: inherit;
+}
+.editorContent .sidebar .palette .paletteItems .skyboxItem .imgWrap .img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.editorContent .sidebar .palette .paletteItems .paletteItem .img360Wrap .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(var(--imgSize) * 4);
+  height: calc(var(--imgSize) * 2);
+}
+/* step through the frames, 50px at a time */
+@keyframes item360Animation {
+  0% {
+    transform: translateX(0);
+  }
+  12.5% {
+    transform: translateX(calc(var(--imgSize) * -1));
+  }
+  25% {
+    transform: translateX(calc(var(--imgSize) * -2));
+  }
+  37.5% {
+    transform: translateX(calc(var(--imgSize) * -3));
+  }
+  50% {
+    transform: translateX(0) translateY(calc(var(--imgSize) * -1));
+  }
+  62.5% {
+    transform: translateX(calc(var(--imgSize) * -1)) translateY(calc(var(--imgSize) * -1));
+  }
+  75% {
+    transform: translateX(calc(var(--imgSize) * -2)) translateY(calc(var(--imgSize) * -1));
+  }
+  87.5% {
+    transform: translateX(calc(var(--imgSize) * -3)) translateY(calc(var(--imgSize) * -1));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.editorContent .sidebar .palette .paletteItems .paletteItem .img360Wrap .img {
+  animation: item360Animation 2s steps(1) infinite;
+}
+
+.editorContent .sidebar .palette .paletteItems .paletteItem .name {
+  position: relative;
+  font-family: 'PlazaRegular';
+  max-width: 80px;
+  padding: 10px;
+  color: #FFF;
+  font-size: 16px;
+  text-shadow: 0 0 5px #000;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* */
+
+.editorContent .publish {
+  color: #FFF;
+}
+.editorContent .publishStatus {
+  display: flex;
+}
+.editorContent .publishStatus .link {
+  margin-left: 10px;
+  color: #2196F3;
+  cursor: pointer;
+}
+.editorContent .publishStatus .link:hover {
+  text-decoration: underline;
+}
+.editorContent .publishStatus .link:active {
+  color: #1976D2;
+}
+.editorContent .publishStatus.publishStatusError {
+  color: #F44336;
+}
+
+/* */
+
+.sceneEditor {
+  color: #FFF;
+}
+
+.sceneEditor .objects {
+  display: flex;
+  flex-direction: column;
+}
+.sceneEditor .objects .objectsObject {
+  display: flex;
+  flex-direction: column;
+  background: #111;
+  border-radius: 5px;
+  margin: 5px;
+  margin-top: 0;
+  padding: 10px;
+  font-family: 'PlazaRegular';
+  font-size: 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.sceneEditor .objects .objectsObject:hover {
+  background: #2196F3;
+}
+.sceneEditor .objects .objectsObject:active {
+  background: #1976D2;
+}
+
+.sceneEditor .selectedApp {
+  display: flex;
+  flex-direction: column;
+  background: #2196F3;
+  border-radius: 5px;
+  font-family: 'PlazaRegular';
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.sceneEditor .selectedApp {
+  margin: 5px;
+  margin-top: 0;
+  padding: 10px;
+}
+.sceneEditor .selectedApp .wrap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.sceneEditor .selectedApp hr {
+  margin-bottom: 10px;
+  visibility: hidden;
+}
+
+.transformControls {
+  display: flex;
+  flex-direction: column;
+}
+.transformControls .label {
+  display: flex;
+  margin-bottom: 5px;
+}
+.transformControls .label .text {
+  width: 80px;
+  margin-right: 5px;
+}
+
+/* */
+
+.homeApp .textContent {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+.homeApp .textContent .textareaInput {
+  height: 200px;
+  margin-bottom: 10px;
+}
+.homeApp .textContent .label {
+  display: flex;
+}
+.homeApp .textContent .label .text {
+  margin-right: 5px;
+  flex: 1;
+}
+.homeApp .textContent .textInput {
+  margin-bottom: 10px;
+}
+.homeApp .textContent .numberInput {
+  margin-bottom: 10px;
+}
+.homeApp .textContent .button {
+  margin-bottom: 10px;
+}
+
+/* */
+
+.homeApp .voiceContent {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+.homeApp .voiceContent .textareaInput,
+.homeApp .voiceContent .select,
+.homeApp .voiceContent .button
+{
+  margin-bottom: 10px;
+}
+.homeApp .voiceContent .textareaInput {
+  height: 200px;
+}
+
+/* */
+
+.homeApp .chatTester {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.homeApp .chatTester .chatMessages {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.homeApp .chatTester .chatMessages .chatMessage {
+  display: flex;
+  font-size: 16px;
+  white-space: pre-wrap;
+}
+.homeApp .chatTester .chatMessages .chatMessage .name {
+  /* font-family: 'PlazaRegular';
+  font-size: 20px; */
+  font-weight: 600;
+  color: #E91E63;
+}
+.homeApp .chatTester .chatMessages .chatMessage .text,
+.homeApp .chatTester .chatMessages .chatMessage .value,
+.homeApp .chatTester .chatMessages .chatMessage .option
+{
+  color: #FFFFFF80;
+}
+.homeApp .chatTester .chatMessages .chatMessage .value {
+  font-style: italic;
+}
+.homeApp .chatTester .input {
+  width: 100%;
+  border: 0;
+  outline: none;
+}
+.homeApp .chatTester .chatMessages .chatMessage .options {
+  display: flex;
+  flex-direction: column;
+}
+.homeApp .chatTester .chatMessages .chatMessage .options .option {
+  padding: 3px;
+  border: 2px solid transparent;
+  line-height: 1;
+  cursor: pointer;
+  user-select: none;
+}
+.homeApp .chatTester .chatMessages .chatMessage .options .option:hover {
+  border-color: #FFFFFF80;
+}
+
+/* */
+
+/* .homeApp .loreEditor {
+} */
+.homeApp .loreEditor .loreWrap {
+  display: flex;
+  flex-direction: column;
+}
+.homeApp .loreEditor .loreWrap .textarea {
+  width: 100%;
+  min-height: 300px;
+}
+
+/* */
+
+.homeApp .topBar {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  right: 0;
+  height: var(--headerHeight);
+  z-index: 2;
+}
+
+/* */
+
+.bottomBar {
+  display: flex;
+  margin-left: auto;
+}
+
+/* */
+
+.homeApp .blocker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+.homeApp .blocker .bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center bottom;
+}
+.homeApp .blocker .wrap {
+  display: flex;
+  padding: 30px;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 400px;
+  color: #FFF;
+}
+.homeApp .blocker .wrap .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+  color: #FFF;
+  transform: skewX(-22deg);
+  pointer-events: none;
+  overflow: hidden;
+}
+.homeApp .blocker .wrap h1,
+.homeApp .blocker .wrap p
+{
+  position: relative;
+  margin: 10px 0;
+}
+.homeApp .blocker .wrap h1 {
+  font-family: 'WinchesterCaps';
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+.homeApp .blocker .wrap p {
+  font-family: 'PlazaRegular';
+  font-size: 30px;
+}
+.homeApp .blocker .wrap a {
+  color: #2196F3;
+}
+.homeApp .blocker .wrap a:hover {
+  color: #64B5F6;
+}
+.homeApp .blocker .wrap a:active {
+  color: #1565C0;
+}
+
+/* */
+
+.canvas {
+  /* position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; */
+  width: 100vw;
+  height: calc(100vh - 62px);
+}

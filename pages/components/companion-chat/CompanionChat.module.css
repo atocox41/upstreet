@@ -1,0 +1,469 @@
+@keyframes flash-right {
+  from {
+    transform: translateX(-320px);
+    opacity: 0.3;
+  }
+
+  to {
+    transform: none;
+    opacity: 0;
+  }
+}
+
+/*  */
+
+.chat {
+  --size: var(--canvas-width);
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: var(--size);
+  transform: none;
+  /* overflow: hidden; */
+  display: flex;
+  perspective: 1200px;
+  perspective-origin: 50px 50%;
+  flex-direction: column;
+}
+
+/*  */
+
+.chat {
+  transform: translateX(var(--size));
+  filter: contrast(0.1) brightness(3);
+  transition: all 0.2s cubic-bezier(0, 1, 0, 1);
+  z-index: 1;
+}
+.chat.open {
+  filter: none;
+  transform: none;
+}
+
+/*  */
+
+.chat .inputs {
+  position: fixed;
+  /* bottom: calc(400px + 15px); */
+  bottom: 400px;
+  right: 6px;
+  width: calc(var(--size) - 6px);
+  transform: none;
+  overflow: hidden;
+  border-radius: 28px;
+  border: 1px solid #333333;
+}
+
+.chat .inputs .inputContainer {
+  display: flex;
+  align-items: stretch; /* This makes the button and textarea the same height */
+}
+
+.chat .inputs .input {
+  width: 100%;
+  overflow-y: scroll;
+  resize: none;
+  padding: 10px 44px 10px 15px;
+  background-color: #161616;
+  border: 0;
+  /*
+  border-top: 3px solid #2196F3;
+  border-bottom: 3px solid #333;
+  */
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+
+  color: #FFF;
+  font-family: 'M PLUS 1';
+  outline: none;
+}
+
+.chat .inputs .chatButton {
+  background-color: #161616;
+  border: none;
+  color: white;
+  padding-bottom: 15px;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+  align-items: center;
+  justify-content: center;
+}
+.chat .inputs .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  filter: invert(20%);
+  pointer-events: none;
+}
+
+.chat.open .inputs .background {
+  animation: flash-right 1s ease-out infinite;
+}
+
+.chat .inputs.locked {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+
+/* */
+
+.chatLog {
+  position: absolute;
+  left: 0;
+  right: 6px;
+  bottom: var(--canvas-height);
+  display: flex;
+  /* width: 100%; */
+  flex-direction: column;
+  height: calc( 100vh - var(--canvas-height));
+  max-height: 480px;
+  flex: 1;
+}
+
+/* */
+
+.chatLog .chatHack {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 200px;
+  padding: 20px;
+  /* background-color: red; */
+  /* background-color: #111; */
+  background-image: linear-gradient(to bottom, #333, #222);
+  /* border-radius: 30px 30px 0 0; */
+  border-radius: 30px;
+  color: #FFF;
+  font-size: 16px;
+  /* opacity: 0.95; */
+  flex-direction: column;
+  z-index: 1;
+}
+.chatLog .chatHack.open {
+  display: flex;
+}
+
+.chatLog .chatHack .textarea {
+  min-height: 150px;
+}
+
+/* */
+
+.imessage {
+  width: 100%;
+  /* background-color: #fff; */
+  /* border: 1px solid #e5e5ea; */
+  /* background: linear-gradient(to right, #111111, #222222); */
+  background: #161616;
+  border: 1px solid #333333;
+  height: calc(100% - 56px);
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  /* font-family: "SanFrancisco"; */
+  font-family: 'M PLUS 1';
+  font-size: 1.25rem;
+  margin: 0 auto 1rem;
+  /* max-width: 600px; */
+  position: relative;
+  padding: 56px 8px 14px 16px;
+}
+
+.avatarName {
+  position: absolute;
+  z-index: 1;
+  left: 46px;
+  text-transform: uppercase;
+  top: 21px;
+  color: #efefef;
+  font-size: 13px;
+}
+
+.imessage .scrollContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-right: 8px;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+.imessage p {
+  border-radius: 1.15rem;
+  line-height: 1.25;
+  max-width: 75%;
+  padding: 0.5rem .875rem;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.imessage p::before,
+.imessage p::after {
+  bottom: -0.1rem;
+  content: "";
+  height: 1rem;
+  position: absolute;
+}
+
+p.from-me {
+  align-self: flex-end;
+  background-color: #248bf5;
+  color: #fff; 
+}
+
+p.from-me::before {
+  border-bottom-left-radius: 0.8rem 0.7rem;
+  border-right: 1rem solid #248bf5;
+  right: -0.35rem;
+  transform: translate(0, -0.1rem);
+}
+
+p.from-me::after {
+  background-color: #161616;
+  border-bottom-left-radius: 0.5rem;
+  right: -40px;
+  transform:translate(-30px, -2px);
+  width: 10px;
+}
+
+p[class^="from-"] {
+  margin: 0.5rem 0;
+  width: fit-content;
+}
+
+p.from-me ~ p.from-me {
+  margin: 0.25rem 0 0;
+}
+
+p.from-me ~ p.from-me:not(:last-child) {
+  margin: 0.25rem 0 0;
+}
+
+p.from-me ~ p.from-me:last-child {
+  margin-bottom: 0.5rem;
+}
+p.from-me.info {
+  background-color: #333;
+  color: #FFF;
+}
+p.from-me.info .img {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  margin-right: 7px;
+  filter: invert(100%);
+  opacity: 0.5;
+}
+p.from-me.info::before {
+  border-bottom-left-radius: 0.8rem 0.7rem;
+  border-right: 1rem solid #333;
+  right: -0.35rem;
+  transform: translate(0, -0.1rem);
+}
+p.from-them {
+  align-items: flex-start;
+  background-color: #e5e5ea;
+  color: #000;
+}
+p.from-them.info {
+  /* align-items: flex-start;
+  background-color: #e5e5ea;
+  color: #000; */
+  background-color: #333;
+  color: #FFF;
+}
+p.from-them.info .img {
+  position: relative;
+  top: 2px;
+  width: 14px;
+  height: 14px;
+  margin-right: 7px;
+  filter: invert(100%);
+  opacity: 0.5;
+}
+p.from-them:before {
+  border-bottom-right-radius: 0.8rem 0.7rem;
+  border-left: 1rem solid #e5e5ea;
+  left: -0.35rem;
+  transform: translate(0, -0.1rem);
+}
+p.from-them.info:before {
+  /* border-left-color: #AAA; */
+  border-left-color: transparent;
+}
+
+p.from-them::after {
+  background-color: #111;
+  border-bottom-right-radius: 0.5rem;
+  left: 20px;
+  transform: translate(-30px, -2px);
+  width: 10px;
+}
+
+p[class^="from-"].emoji {
+  background: none;
+  font-size: 2.5rem;
+}
+
+p[class^="from-"].emoji::before {
+  content: none;
+}
+
+.no-tail::before {
+  display: none;
+}
+
+.margin-b_none {
+  margin-bottom: 0 !important;
+}
+
+.margin-b_one {
+  margin-bottom: 1rem !important;
+}
+
+.margin-t_one {
+  margin-top: 1rem !important;
+}
+
+.image {
+	word-wrap:break-word;
+	cursor: pointer;
+  width: 175px;
+	border-radius: 10%;
+	overflow: hidden;
+	margin-right: auto;
+	margin-left: auto;
+	object-fit: cover;
+}
+
+/* */
+
+.chatPhone {
+  --size: 300px;
+
+  /* position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0; */
+
+  /* position: fixed;
+  top: inherit;
+  bottom: inherit;
+  left: inherit;
+  right: inherit; */
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  /* width: var(--size); */
+  /* height: inherit; */
+  transform: none;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  /* transform: rotateY(0); */
+  transition: all 0.3s cubic-bezier(0, 1, 0, 1);
+}
+
+/* */
+
+.chatPhone .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+}
+.chatPhone .header .label {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  padding: 5px;
+  color: #FFF;
+  /* font-family: 'Anime Ace'; */
+  font-family: 'M PLUS 1';
+  font-size: 20px;
+  /* pointer-events: none; */
+}
+
+.toggleModeButton {
+  position: absolute;
+  margin-left: auto;
+  padding: 0 10px;
+  background-color: #222;
+  /* background-image: linear-gradient(to bottom, #111, #333); */
+  border-radius: 5px;
+  /* box-shadow: 0 1px 3px #FFF; */
+  cursor: pointer;
+}
+.chatPhone .toggleModeButton {
+  pointer-events: all;
+}
+.toggleModeButton:hover,
+.toggleModeButton.open
+{
+  background-color: #2196f3;
+}
+.toggleModeButton .img {
+  width: 18px;
+  height: 18px;
+  filter: invert(100%);
+}
+.toggleModeButton.reverse .img {
+  transform: rotatez(180deg);
+}
+
+/* .toggleModeButton.phone {
+  top: 12px;
+  right: 12px;
+} */
+.toggleModeButton.hack {
+  top: 12px;
+  right: 12px;
+}
+
+/* */
+
+/* .chatPhone.front {
+  
+}
+.chatPhone.back .chatLog .imessage {
+  background-image: linear-gradient(to bottom, #1E88E5, #42A5F5);
+} */
+
+/* */
+
+/* .chatPhone.front.sideOpen,
+.chatPhone.back.sideOpen
+{
+  transform: rotateY(0);
+}
+.chatPhone.front,
+.chatPhone.back
+{
+  transform: rotateY(180deg);
+} */
+
+/* .chatPhone:not(.sideOpen) {
+  opacity: 0;
+  pointer-events: none;
+} */

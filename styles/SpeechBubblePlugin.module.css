@@ -1,0 +1,96 @@
+/* .speechBubblePlugin {
+  display: flex;
+  flex-direction: column;
+} */
+/* .speechBubblePlugin .speechBubbles {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.speechBubblePlugin .speechBubbles .speechBubble {
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+/* */
+
+.speechBubblePlugin .speechBubbles {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  z-index: 1;
+  /* overflow: hidden; */
+  pointer-events: none;
+}
+
+.speechBubblePlugin .speechBubbles .speechBubble {
+  position: absolute;
+  padding: 15px;
+  width: max-content;
+  max-width: 300px;
+  background-image: linear-gradient(to bottom, #333, #111);
+  border: 3px solid #333;
+  border-radius: 3px;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  color: #FFF;
+  font-family: 'Anime Ace';
+  pointer-events: all;
+  white-space: pre-wrap;
+}
+/* .speechBubblePlugin .speechBubbles .speechBubble .placeholder {
+  position: relative;
+  visibility: hidden;
+} */
+.speechBubblePlugin .speechBubbles .speechBubble .text {
+  /* position: absolute; */
+}
+.speechBubblePlugin .speechBubbles .speechBubble .notch {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+/* */
+
+.speechBubblePlugin .speechBubbles .speechBubble .notch::before {
+  position: absolute;
+  border-width: 0 20px 20px 0;
+  border-style: solid;
+  border-color: transparent #333 transparent transparent;
+  content: '';
+}
+.speechBubblePlugin .speechBubbles .speechBubble .notch::after {
+  position: absolute;
+  left: 4px;
+  /* top: -2px; */
+  border-width: 0 14px 14px 0;
+  border-style: solid;
+  border-color: transparent #000 transparent transparent;
+  content: '';
+}
+
+/* */
+
+.speechBubblePlugin .speechBubbles .wrap {
+  position: absolute;
+  /* top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none; */
+}
+.speechBubblePlugin .speechBubbles .wrap:not(.visible) {
+  display: none;
+}

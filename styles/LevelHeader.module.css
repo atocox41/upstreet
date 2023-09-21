@@ -1,0 +1,18 @@
+.levelHeader {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+.levelHeader .header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+}
+.levelHeader .header .button {
+  display: flex;
+}

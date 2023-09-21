@@ -1,0 +1,74 @@
+{
+  "installCommand": "./scripts/remove-electron-deps.sh && npm install",
+  "buildCommand": "vite build",
+  "outputDirectory": "dist/web",
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers" : [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Expose-Headers",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Private-Network",
+          "value": "true"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/d(ev)?/(.*)",
+      "destination": "/home.html"
+    },
+    {
+      "source": "/t(itlescreen)?/(.*)",
+      "destination": "/titlescreen.html"
+    },
+    {
+      "source": "/a(dventure)?/(.*)",
+      "destination": "/adventure.html"
+    },
+    {
+      "source": "/w(orld)?/(.*)",
+      "destination": "/world.html"
+    },
+    {
+      "source": "/c(reative)?/(.*)",
+      "destination": "/creative.html"
+    },
+    {
+      "source": "/i(ndev)?/(.*)",
+      "destination": "/indev.html"
+    },
+    {
+      "source": "/a(gent)?/(.*)",
+      "destination": "/generative.html"
+    },
+    {
+      "source": "/j(edicouncil)?/(.*)",
+      "destination": "/jedicouncil.html"
+    },
+    {
+      "source": "/t(emple)?/(.*)",
+      "destination": "/temple.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/404.html"
+    }
+  ]
+}

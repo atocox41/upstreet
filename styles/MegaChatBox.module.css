@@ -1,0 +1,329 @@
+.megaChatBox {
+  position: absolute;
+  left: 20vw;
+  right: 20vw;
+  bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  height: 30vh;
+  color: #FFF;
+  transform: scale(0.8);
+  opacity: 0;
+  z-index: 1;
+  transition: transform 2s cubic-bezier(0, 1, 0, 1), opacity 2s cubic-bezier(0, 1, 0, 1);
+}
+.megaChatBox.open {
+  transform: none;
+  /* opacity: 1; */
+  opacity: 0.85;
+  pointer-events: all;
+}
+.megaChatBox .inner {
+  position: relative;
+  display: flex;
+  margin: 15px;
+  padding: 15px;
+  border: 3px solid #FFF3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+.megaChatBox .row {
+  display: flex;
+  margin: 10px 0;
+  align-items: baseline;
+}
+.megaChatBox .name {
+  margin-right: 20px;
+  font-family: 'WinchesterCaps';
+  font-size: 30px;
+}
+.megaChatBox .level {
+  font-family: 'WinchesterCaps';
+  font-size: 22px;
+}
+.megaChatBox .text {
+  font-family: 'Exo';
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+.megaChatBox .content {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+.megaChatBox .toolbar {
+  display: flex;
+  flex-direction: column;
+}
+.megaChatBox .toolbar:not(.visible),
+.megaChatBox .toolbar:not(.visible) .nextBlink .arrow
+{
+  visibility: hidden !important;
+}
+.megaChatBox .icon {
+  display: flex;
+  width: 40px;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.2;
+  cursor: pointer;
+}
+.megaChatBox .icon .img {
+  width: 28px;
+  height: 28px;
+  padding: 5px;
+  filter: invert(1);
+}
+.megaChatBox .icon:hover {
+  opacity: 1;
+}
+.megaChatBox .icon:active {
+  opacity: 0.5;
+}
+.megaChatBox .lightArrow {
+  display: flex;
+}
+
+/* */
+
+.outer {
+  background-image: linear-gradient(to bottom, #222, #000);
+}
+
+/* */
+
+.megaChatBox .options {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  font-family: 'PlazaRegular';
+  font-size: 22px;
+  z-index: 1;
+  transform: none;
+  opacity: 1;
+  transition: transform 2s cubic-bezier(0, 1, 0, 1), opacity 2s cubic-bezier(0, 1, 0, 1);
+}
+.megaChatBox .options:not(.open) {
+  transform: scale(0.8);
+  opacity: 0;
+}
+.megaChatBox .options:not(.open),
+.megaChatBox .options.selected
+{
+  pointer-events: none;
+}
+.megaChatBox .options .inner {
+  padding-right: 50px;
+  flex-direction: column;
+}
+.menu .options .icon {
+  padding: 10px;
+}
+
+/* */
+
+.megaChatBox .options .option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: 'Exo';
+  cursor: pointer;
+  user-select: none;
+}
+.megaChatBox .options .option.hovered {
+  background-image: url('/images/ui/rainbow-line.svg');
+  object-fit: fill;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  animation-duration: 0.5s;
+}
+.megaChatBox .options .option .border {
+  pointer-events: none;
+  visibility: hidden;
+}
+.megaChatBox .options:not(.selected) .option:hover .border,
+.megaChatBox .options.selected .option.selected .border
+{
+  visibility: visible;
+}
+.megaChatBox .options .option .border {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  border: 2px solid #FFF;
+}
+.megaChatBox .options .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.megaChatBox .options .option .value {
+  padding: 5px;
+  font-size: 18px;
+  flex: 1;
+}
+.megaChatBox .options .option .arrow {
+  display: flex;
+  width: 18px;
+  height: 18px;
+  margin-right: 30px;
+  object-fit: contain;
+  
+  animation-duration: 2s;
+}
+.megaChatBox .options .option:not(.hovered) .arrow,
+.megaChatBox .options.selected .option .arrow
+{
+  visibility: hidden;
+}
+
+/* */
+
+.megaChatBox .lightArrow {
+  position: relative;
+  display: flex;
+  margin: 0 32px;
+  margin-left: auto;
+}
+.megaChatBox .lightArrow canvas {
+  width: 30px;
+  height: 30px;
+}
+
+.megaChatBox .inputWrap:not(.open) {
+  display: none;
+}
+.megaChatBox .inputWrap {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  padding: 10px;
+  background-image: linear-gradient(to bottom, #222, #000);
+}
+.megaChatBox .inputWrap .input {
+  padding: 5px;
+  background: transparent;
+  border: 3px solid #FFF3;
+  /* font-family: 'PlazaRegular'; */
+  font-family: 'Exo';
+  font-size: 18px;
+  color: #FFF;
+  outline: none;
+}
+.megaChatBox .inputWrap .input:focus {
+  border-color: #FFF;
+}
+
+.megaChatBox .speakWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all 2s cubic-bezier(0, 1, 0, 1);
+}
+.megaChatBox .speakWrap:not(.open) {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.8);
+}
+.megaChatBox .speakWrap .background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  object-fit: cover;
+  filter: blur(5px);
+}
+.megaChatBox .speakWrap .speak {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-image: linear-gradient(to bottom, #222, #000);
+  border: 3px solid #FFF3;
+}
+.megaChatBox .speakWrap .speak .img {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  padding: 5px;
+  filter: invert(1);
+}
+
+/* */
+
+@keyframes blink_effect {
+  0% {
+    visibility: visible;
+  }
+  49% {
+    visibility: visible;
+  }
+  51% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+.megaChatBox .nextBlink {
+  display: flex;
+  width: 40px;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.megaChatBox .nextBlink .arrow {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+  animation: 1.5s linear infinite blink_effect;
+}
+.megaChatBox .spacer {
+  flex: 1;
+}
+
+/* */
+
+@keyframes hueRotate {
+  0% {
+    filter: brightness(1.7) hue-rotate(0deg);
+  }
+  25% {
+    filter: brightness(1.7) hue-rotate(90deg);
+  }
+  50% {
+    filter: brightness(1.7) hue-rotate(180deg);
+  }
+  75% {
+    filter: brightness(1.7) hue-rotate(270deg);
+  }
+  100% {
+    filter: brightness(1.7) hue-rotate(360deg);
+  }
+}
+
+.megaChatBox .options .option.hovered,
+.megaChatBox .options .option .arrow
+{
+  animation-name: hueRotate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}

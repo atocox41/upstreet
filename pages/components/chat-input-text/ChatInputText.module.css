@@ -1,0 +1,98 @@
+@keyframes flash-right {
+  from {
+    transform: translateX(-320px);
+    opacity: 0.3;
+  }
+
+  to {
+    transform: none;
+    opacity: 0;
+  }
+}
+
+/*  */
+
+.chatInputText {
+  --size: 330px;
+
+  display: flex;
+  /* position: fixed;
+  bottom: 0;
+  left: 0; */
+  width: var(--size);
+}
+
+/*  */
+
+.chatInputText .inputs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: var(--size);
+  /* overflow: hidden; */
+}
+
+.chatInputText .inputs .input {
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  background: transparent;
+  border: 0;
+  color: #FFF;
+  font-family: monospace;
+  outline: none;
+}
+
+.chatInputText .inputs .background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  filter: invert(100%);
+  object-fit: fill;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 1s cubic-bezier(0, 1, 0, 1);
+}
+.chatInputText .inputs .backdrop {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -30px;
+  right: 0;
+  background-color: #000;
+  transform: skewX(-22deg);
+  pointer-events: none;
+}
+
+/* */
+
+.chatInputText.open .inputs .background {
+  visibility: visible;
+  animation: flash-right 1s ease-out infinite;
+}
+.chatInputText.open .inputs .backdrop {
+  background-color: #222;
+}
+
+/* blink material blue keyframes */
+@keyframes blink-blue {
+  0% {
+    background-color: #039be5;
+    /* color: #000; */
+  }
+  49% {
+    background-color: #039be5;
+    /* color: #000; */
+  }
+  51% {
+    background-color: #000;
+    /* color: #FFF; */
+  }
+  100% {
+    background-color: #000;
+    /* color: #FFF; */
+  }
+}

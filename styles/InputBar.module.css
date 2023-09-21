@@ -1,0 +1,54 @@
+.inputBar {
+  display: flex;
+  position: fixed;
+  bottom: 15px;
+  right: 0;
+  width: 300px;
+  z-index: 1;
+}
+.inputBar .buttons {
+  display: flex;
+  margin: 0 auto;
+}
+.inputBar .button {
+  display: flex;
+  background: linear-gradient(to bottom, #333, #111);
+  border: 2px solid #00000020;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 7px;
+  user-select: none;
+}
+.inputBar .button:nth-child(1) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.inputBar .button:nth-child(2) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  /* border-top-right-radius: 0;
+  border-bottom-right-radius: 0; */
+}
+/* .inputBar .button:nth-child(3) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+} */
+.inputBar .button:hover,
+.inputBar .button.button.selected
+{
+  background: linear-gradient(to bottom, #2196F3, #1976D2);
+}
+.inputBar .button:active {
+  background: linear-gradient(to bottom, #1976D2, #2196F3);
+}
+/* .inputBar .button + .button {
+  margin-left: 5px;
+} */
+.inputBar .button .icon {
+  width: 34px;
+  height: 34px;
+  filter: invert(100%);
+  pointer-events: none;
+}

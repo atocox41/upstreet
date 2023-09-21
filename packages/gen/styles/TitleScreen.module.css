@@ -1,0 +1,228 @@
+
+/* */
+
+.titleScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* */
+
+.titleScreen .mainScreen { 
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.titleScreen .mainScreen:not(.enabled) {
+  display: none;
+}
+
+/* */
+
+.titleScreen .mainScreen .footer {
+  --animation-offset: 150px;
+
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  bottom: 0;
+  height: var(--animation-offset);
+  pointer-events: none;
+  user-select: none;
+
+  overflow: hidden;
+}
+
+/* */
+
+.titleScreen .mainScreen .footer .warningLabel,
+.titleScreen .mainScreen .footer .slider
+{
+  transition: transform 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+/* */
+
+.titleScreen .mainScreen .footer .warningLabel {
+  position: absolute;
+  padding: 10px;
+  font-family: 'SF Movie Poster';
+  font-size: 40px;
+  line-height: 1;
+  align-items: center;
+  background-color: #000;
+  color: #FFF;
+}
+
+
+.titleScreen .mainScreen.focused .footer .warningLabel {
+  transform: translateY(var(--animation-offset));
+}
+
+/* */
+
+.titleScreen .mainScreen .footer .slider {
+  position: absolute;
+}
+
+.titleScreen .mainScreen .footer .slider .notches {
+  display: flex;
+  padding: 60px 10px;
+}
+
+.titleScreen .mainScreen .footer .slider .notches .notch {
+  display: inline-flex;
+  margin-right: 20px;
+  /* background-image: linear-gradient(to right, #080808, #111); */
+  background-color: #111;
+  border: 3px solid #FFFFFF08;
+  width: 50px;
+  height: 20px;
+  transform: skewX(-22deg);
+}
+.titleScreen .mainScreen .footer .slider .notches .notch.selected {
+  background-color: #333;
+}
+/* animate background-color */
+@keyframes loading {
+  0% {
+    background-color: #111;
+  }
+  50% {
+    background-color: #333;
+  }
+  100% {
+    background-color: #111;
+  }
+}
+.titleScreen .mainScreen .footer .slider .notches .notch.loading {
+  animation: loading 1s infinite;
+}
+
+.titleScreen .mainScreen:not(.focused) .footer .slider {
+  transform: translateY(var(--animation-offset));
+}
+
+/* */
+
+.titleScreen .mainScreen .footer .bold {
+  /* font-family: 'SF Movie Poster Bold'; */
+  font-weight: 600;
+}
+
+.titleScreen .mainScreen .footer .right {
+  /* float: right; */
+}
+
+/* */
+
+.titleScreen .mainScreen .canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+.titleScreen .mainScreen.storyOpen .canvas,
+.titleScreen .mainScreen.storyOpen .footer
+{
+  filter: brightness(0.5);
+}
+
+/* */
+
+.titleScreen .gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.titleScreen .gallery .imageWrap {
+  width: 300px;
+  height: 300px;
+  padding: 5px;
+  border: 3px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #EEE;
+}
+.titleScreen .gallery .imageWrap:hover {
+  border-color: #000;
+}
+
+.titleScreen .gallery .imageWrap .image {
+  width: 100%;
+  height: 100%;
+}
+
+.titleScreen .gallery .imageWrap .image:not(.loaded) {
+  visibility: hidden;
+}
+
+/* */
+
+.titleScreen .speechBubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  /* background-color: #FF0000080; */
+  /* border: 5px solid #000; */
+  z-index: 1;
+  /* width: 100vw;
+  height: 100vh; */
+  overflow: hidden;
+  pointer-events: none;
+  /* user-select: none; */
+}
+
+.titleScreen .speechBubbles .speechBubble {
+  position: absolute;
+  padding: 15px;
+  background-image: linear-gradient(to bottom, #333, #111);
+  border: 3px solid #333;
+  border-radius: 3px;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  color: #FFF;
+  font-family: 'Anime Ace';
+  pointer-events: all;
+}
+.titleScreen .speechBubbles .speechBubble .placeholder {
+  position: relative;
+  visibility: hidden;
+}
+.titleScreen .speechBubbles .speechBubble .text {
+  position: absolute;
+}
+.titleScreen .speechBubbles .speechBubble .notch {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+/* */
+
+.titleScreen .speechBubbles .speechBubble .notch::before {
+  position: absolute;
+  border-width: 0 20px 20px 0;
+  border-style: solid;
+  border-color: transparent #333 transparent transparent;
+  content: '';
+}
+.titleScreen .speechBubbles .speechBubble .notch::after {
+  position: absolute;
+  left: 4px;
+  /* top: -2px; */
+  border-width: 0 14px 14px 0;
+  border-style: solid;
+  border-color: transparent #000 transparent transparent;
+  content: '';
+}

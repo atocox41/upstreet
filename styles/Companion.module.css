@@ -1,0 +1,579 @@
+/* .body {
+  width: 1000px;
+  height: 1000px;
+  pointer-events: none;
+  background-color: #FF000030;
+} */
+
+/* */
+
+.companion {
+  --canvas-width: 300px;
+  --canvas-height: 400px;
+  --side-canvas-width: 300px;
+  --side-canvas-height: 300px;
+
+  position: fixed;
+  bottom: 0;
+  right: 50px;
+}
+
+/* */
+
+.companion .agents {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  opacity: 1;
+  transition: opacity 0.3s cubic-bezier(0, 1, 0, 1);
+}
+.companion .agents .agentNode {
+  display: flex;
+}
+.companion .agents .agent {
+  display: flex;
+}
+.companion .agents.dim {
+  opacity: 0;
+  pointer-events: none;
+}
+.companion .canvas {
+  width: var(--canvas-width);
+  height: var(--canvas-height);
+  transition: opacity 0.3s cubic-bezier(0, 1, 0, 1);
+}
+
+/* */
+
+.companion.fullscreen .canvas {
+  height: 100vh;
+}
+
+/* */
+
+.companion .agents .canvas:hover
+/* .companion .canvas.hover */
+{
+  opacity: 0.5;
+}
+
+/* keyframes to animate height up and down */
+
+@keyframes bounce {
+  0% {
+    /* transform: scaleY(20%); */
+    height: calc(var(--canvas-height) * 0.2);
+  }
+  50% {
+    /* transform: scaleY(10%); */
+    height: calc(var(--canvas-height) * 0.1);
+  }
+  100% {
+    /* transform: scaleY(20%); */
+    height: calc(var(--canvas-height) * 0.2);
+  }
+}
+
+.companion .canvasPlaceholder {
+  position: fixed;
+  bottom: 0;
+  right: var(--canvas-width);
+  width: var(--canvas-width);
+  height: var(--canvas-height);
+  transform-origin: bottom center;
+  animation: bounce 0.3s infinite;
+  /* background: linear-gradient(
+    to bottom,
+    #000,
+    #222
+  ); */
+  background-color: #111;
+  border-radius: 10px;
+}
+
+/* */
+
+.companion .debugOverlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to right, rgba(12,12,12,0.5), rgba(0,0,0,0));
+  color: #FFF;
+  font-family: 'Gothic A1';
+  text-shadow: 0 1px 3px #000;
+  z-index: 1;
+  pointer-events: none;
+}
+.companion .debugOverlay h1 {
+  font-family: 'TT Squares Condensed';
+}
+
+/* */
+
+.companion .imgs {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+}
+.companion:not(.devtoolsOpen) .imgs .img,
+.companion:not(.devtoolsOpen):not(.showDebugPerception) .perceptionOverlay
+{
+  display: none;
+}
+
+.companion .imgs .img {
+  /* position: absolute; */
+  /* bottom: 0;
+  left: 0; */
+  /* width: 100vw; */
+  /* height: auto; */
+  pointer-events: none;
+}
+.companion .imgs .img.hidden {
+  display: none;
+}
+
+/* */
+
+.companion .perceptionPreview {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* width: 100vw; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.companion .perceptionPreview .perceptionPreviewWrap {
+  position: relative;
+}
+.companion .perceptionPreview .perceptionPreviewWrap .img,
+.companion .perceptionPreview .perceptionPreviewWrap .perceptionOverlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.companion .perceptionOverlay {
+  /* width: inherit; */
+  /* height: max-content; */
+}
+.companion .perceptionOverlay .perceptionBox {
+  position: absolute;
+  /* background-color: #F00; */
+  border: 3px solid #F00;
+}
+.companion .perceptionOverlay .perceptionBox .label {
+  display: flex;
+  position: absolute;
+  top: -30px;
+  left: -3px;
+  height: 30px;
+  padding: 5px;
+  background-color: #F00;
+  color: #FFF;
+  font-family: 'M PLUS 1';
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+/* */
+
+.companion .seg {
+  /* position: fixed; */
+  width: var(--canvas-width);
+  height: var(--canvas-width);
+  /* height: max-content; */
+  /* left: var(--canvas-width); */
+  /* bottom: 0; */
+}
+
+/* */
+
+/* .companion .boxes {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.companion .boxes .box {
+  position: absolute;
+  font-family: monospace;
+  padding: 5px;
+  background-color: #111;
+  color: #FFF;
+} */
+
+/* */
+
+.companion .textarea {
+  /* position: fixed; */
+  /* top: 200px; */
+  /* left: 0; */
+  font-size: 13px;
+  width: 800px;
+  /* background-color: #111; */
+  /* color: #FFF; */
+  font-family: monospace;
+  /* font-family: inherit; */
+  /* white-space: pre; */
+  /* text-overflow: ellipsis; */
+  /* overflow: hidden; */
+  /* resize: none; */
+  /* opacity: 0.5; */
+}
+
+/* */
+
+.companion .header {
+  /* position: fixed; */
+  /* top: 0; */
+  /* right: 0; */
+  display: flex;
+  flex-direction: column;
+}
+.companion .header .title,
+.companion .header .path
+{
+  padding: 5px;
+  /* font-family: monospace; */
+  font-size: 13px;
+  /* background-color: #111; */
+  /* color: #FFF; */
+  /* opacity: 0.7; */
+}
+
+/* */
+
+.companion .subheader {
+  /* position: fixed; */
+  /* top: 50px; */
+  /* right: 0; */
+  display: flex;
+  flex-direction: column;
+}
+.companion .subheader .detail {
+  padding: 5px;
+  /* font-family: monospace; */
+  font-size: 13px;
+  /* background-color: #222; */
+  /* color: #FFF; */
+  white-space: pre-wrap;
+  /* opacity: 0.7; */
+}
+
+/* */
+
+.companion .timings {
+  /* position: fixed;
+  top: 140px;
+  right: 0; */
+  display: flex;
+  flex-direction: column;
+}
+.companion .timings .timing {
+  display: flex;
+  /* background-color: #111; */
+  /* color: #FFF; */
+}
+.companion .timings .timing .name {
+  margin-right: 10px;
+}
+.companion .timings .timing .time {
+  width: 100px; 
+}
+
+/* */
+
+.companion .row {
+  display: flex;
+}
+.companion .doubleOption,
+.companion .singleOption
+{
+  display: flex;
+}
+.companion .doubleOption .section,
+.companion .singleOption .section
+{
+  position: relative;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background-color: #111;
+  cursor: pointer;
+  transition: background-color 0.1s ease-out;
+}
+.companion .doubleOption .section.enabled,
+.companion .doubleOption .section:hover,
+.companion .doubleOption .section.active,
+.companion .singleOption .section.enabled,
+.companion .singleOption .section:hover,
+.companion .singleOption .section.active
+{
+  background-color: #2196F3;
+}
+.companion .doubleOption .section:active,
+.companion .singleOption .section:active
+{
+  background-color: #1976D2;
+}
+.companion .doubleOption .section .img,
+.companion .singleOption .section .img
+{
+  position: relative;
+  width: inherit;
+  height: inherit;
+  padding: 5px;
+  filter: invert(100%);
+  object-fit: contain;
+}
+
+.companion .singleOption .section {
+  border-radius: 10px;
+}
+
+.companion .doubleOption .section:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-right: 1px;
+}
+.companion .doubleOption .section:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* */
+
+.animatedText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--canvas-width);
+  height: var(--canvas-height);
+  z-index: 1;
+  pointer-events: none;
+}
+.animatedText .text {
+  position: absolute;
+  width: 100%;
+  padding: 5px;
+  /* font-family: 'Anime Ace'; */
+  font-family: 'Gothic A1';
+  font-size: 20px;
+  color: #f2f35f;
+  text-shadow: 1px 3px 3px #000;
+  /* -webkit-text-stroke: 1px #000; */
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center; */
+  text-align: center;
+}
+.animatedText .botText {
+  bottom: 0;
+  left: 0;
+}
+.animatedText .userText {
+  top: 0;
+  left: 0;
+}
+
+/* */
+
+.ml12 {
+  white-space: pre-wrap;
+}
+
+.ml12 .letter {
+  /* display: inline-block; */
+}
+
+/* */
+
+.companion .terminal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: monospace;
+  background-color: #000;
+  color: #FFF;
+}
+
+/* */
+
+.companion .browser {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+.companion .browser .browserHeader {
+  display: flex;
+  background-color: #111;
+}
+.companion .browser .browserHeader .input {
+  padding: 5px;
+  background-color: #DDD;
+  border: 0;
+  color: #000;
+  font-family: monospace;
+  font-size: 13px;
+  flex: 1;
+  outline: none;
+}
+.companion .browser .browserHeader .button {
+  border: 0;
+  background-color: #EEE;
+  cursor: pointer;
+}
+.companion .browser .browserHeader .button:hover {
+  background-color: #CCC;
+}
+.companion .browser .browserHeader .button.highlight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
+.companion .browser .browserCanvas {
+  width: 800px;
+  height: 600px;
+  background-color: #00000044;
+}
+.companion .browser .browserVideo {
+  width: 800px;
+  height: 600px;
+  background-color: #00000044;
+}
+
+/* */
+
+.companion .button .buttonImg {
+  width: 20px;
+  height: 20px;
+  /* padding: 5px;
+  filter: invert(100%);
+  object-fit: contain; */
+}
+
+/* */
+
+.companion .taskManager {
+  --task-manager-width: 400px;
+
+  position: absolute;
+  top: 0;
+  right: calc(-1 * var(--task-manager-width));
+  display: flex;
+  flex-direction: column;
+  width: var(--task-manager-width);
+  background-color: #111;
+}
+.companion .taskManager .input,
+.companion .taskManager .output
+{
+  flex: 1;
+}
+
+.companion .taskManager .output
+{
+  min-height: 400px;
+}
+
+/* */
+
+.screenWorlds {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+}
+.screenWorlds.enabled {
+  pointer-events: all;
+}
+/* .screenWorlds.active {
+  background-color: #0000FF44;
+} */
+.screenWorlds .screenWorld {
+  position: absolute;
+  pointer-events: all;
+}
+.screenWorlds .screenWorld .border {
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  left: -3px;
+  right: -3px;
+  border: 3px solid #333;
+}
+/* .screenWorlds .screenWorld:not(.rendered) {
+  background-color: #0080FF88;
+} */
+.screenWorlds .screenWorld .captureCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.screenWorlds .screenWorld:not(.rendered) .captureCanvas {
+  display: none;
+}
+
+/* */
+
+.screenWorlds .screenWorld .bar {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.screenWorlds .screenWorld:not(:hover) .bar,
+.screenWorlds .screenWorld:not(.rendered) .bar
+{
+  display: none;
+}
+.screenWorlds .screenWorld .bar .link {
+  display: flex;
+  background-image: linear-gradient(to bottom, #333, #111);
+}
+.screenWorlds .screenWorld .bar .link:hover {
+  filter: invert(100%);
+}
+.screenWorlds .screenWorld .bar .link .img {
+  width: 30px;
+  height: 30px;
+  filter: invert(100%);
+  cursor: pointer;
+}
+.screenWorlds .screenWorld {
+  cursor: pointer;
+}
+.screenWorlds .screenWorld.rendered:hover .border {
+  border-color: #CCC;
+  box-shadow: 0 1px 3px #000;
+}
+
+.worldNode .canvas {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+}

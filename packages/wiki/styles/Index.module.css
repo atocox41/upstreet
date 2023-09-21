@@ -1,0 +1,31 @@
+.container {
+  width: 640px;
+  min-height: 100vh;
+  margin: 30px auto;
+  background-color: #111;
+}
+.search {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.search .input {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.search .results {
+  display: flex;
+  flex-direction: column;
+}
+.search .results .result {
+  /* display: flex; */
+  overflow: hidden;
+  padding: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* width: inherit; */
+  /* cursor: pointer; */
+}
+.search .results .result:hover {
+  background-color: #333;
+}

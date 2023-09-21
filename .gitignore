@@ -1,0 +1,9 @@
+node_modules
+certs
+rtfx
+.next
+dist
+data
+config.json
+.DS_Store
+.env

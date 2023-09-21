@@ -1,0 +1,112 @@
+.topBar {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.buttons {
+  display: flex;
+}
+.buttons .button {
+  display: flex;
+  position: relative;
+  margin: 5px;
+  padding: 0 10px;
+  align-items: center;
+  /* overflow: hidden; */
+}
+.buttons .button:not(.disabled) {
+  cursor: pointer;
+}
+.buttons .button.disabled {
+  opacity: 0.5;
+}
+.buttons .button .file {
+  /* fit the button but keep the file input invisible (clipped) */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -300px;
+  right: 0;
+  /* width: 100%;
+  height: 100%; */
+  /* opacity: 0; */
+  cursor: pointer;
+}
+.buttons .button .img {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  filter: invert(1);
+  pointer-events: none;
+  user-select: none;
+}
+.buttons .button .img.small {
+  width: 30px;
+  height: 30px;
+}
+.buttons .button .imgPlaceholder {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  background-color: #222;
+  pointer-events: none;
+}
+.buttons .button .text {
+  position: relative;
+  padding-left: 5px;
+  font-family: 'PlazaRegular';
+  font-size: 20px;
+  color: #FFF;
+  pointer-events: none;
+}
+.buttons .button .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+  transform: skewX(-22deg);
+  pointer-events: none;
+  overflow: hidden;
+}
+.buttons .button .background .file {
+  pointer-events: all;
+}
+.buttons .button:not(.disabled):hover .background,
+.buttons .button:not(.disabled).selected .background
+{
+  background-color: #2196F3;
+}
+.buttons .button:not(.disabled):active .background {
+  background-color: #1976D2;
+  transform: skewX(-22deg);
+}
+
+/* */
+
+.buttons .select:not(.open) .button:not(.selected) {
+  display: none;
+}
+.buttons .select {
+  height: 40px;
+  overflow: visible;
+}
+
+/* */
+
+.select:not(.open) .option:not(.selected) {
+  display: none;
+}
+.select .option .icon {
+  width: 30px;
+  height: 30px;
+}
+.select .option.selected {
+  background-color: #FFF;
+  color: #000;
+}

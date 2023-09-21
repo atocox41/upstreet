@@ -1,0 +1,144 @@
+.metasceneGenerator {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.metasceneGenerator .panelPlaceholder {
+  margin-bottom: 30px;
+}
+.metasceneGenerator .panelPlaceholder.hidden {
+  display: none;
+  /* visibility: hidden; */
+}
+
+.metasceneGenerator .metasceneRenderer
+{
+  position: relative;
+  width: 1024px;
+  height: 1024px;
+}
+
+.metasceneGenerator .metazineCanvas {
+  position: relative;
+  width: 1024px;
+}
+
+.metasceneGenerator .metazineCanvas .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+}
+.metasceneGenerator .metazineCanvas .overlay .heroTag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background-color: #000; */
+}
+.metasceneGenerator .metazineCanvas .overlay .heroTag .h1,
+.metasceneGenerator .metazineCanvas .overlay .heroTag .h2
+{
+  position: relative;
+  padding: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: #000;
+  color: #FFF;
+}
+.metasceneGenerator .metazineCanvas .overlay .heroTag .h1 {
+  max-width: 400px;
+}
+.metasceneGenerator .metazineCanvas .overlay .heroTag .h2 {
+  max-width: 600px;
+}
+.metasceneGenerator .metazineCanvas .overlay .form {
+  pointer-events: all;
+}
+.metasceneGenerator .metazineCanvas .overlay .infobar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  pointer-events: none;
+}
+.metasceneGenerator .metazineCanvas .overlay .infobar .img {
+  width: 100%;
+  object-fit: cover;
+}
+.metasceneGenerator .metazineCanvas .overlay .infobar .button {
+  pointer-events: all;
+}
+
+.metasceneGenerator .header {
+  display: flex;
+  width: 1024px;
+}
+.metasceneGenerator .header.hidden {
+  visibility: hidden;
+}
+.metasceneGenerator .header .spacer {
+  flex: 1;
+}
+
+/* */
+
+.metasceneGenerator .button {
+  display: inline-block;
+  font-size: 30px;
+  padding: 10px;
+  border: 3px solid currentColor;
+}
+.metasceneGenerator .button:not(:disabled):hover {
+  color: #FFF;
+  background-color: #000;
+  border-color: #000;
+  cursor: pointer;
+}
+
+.metasceneGenerator .numberInput {
+  width: 50px;
+}
+
+/* */
+
+.metasceneGenerator .sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 235px;
+  padding: 10px;
+  background-color: #000;
+  color: #FFF;
+  /* border-left: 1px solid #000; */
+  /* overflow-y: auto; */
+}
+
+/* */
+
+.metasceneGenerator .files {
+  display: flex;
+  flex-direction: column;
+  max-width: 640px;
+}
+.metasceneGenerator .files .file {
+  display: flex;
+}
+.metasceneGenerator .files .file .fileName {
+  flex: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.metasceneGenerator .files .file .closeX {
+  display: flex;
+  width: 30px;
+  justify-content: center;
+}

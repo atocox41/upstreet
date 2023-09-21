@@ -1,0 +1,11 @@
+{
+  "name": "floating-treehouse",
+  "description": "floating-treehouse",
+  "start_url": "index.js",
+  "components": [
+    {
+      "key": "invincible",
+      "value": "true"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+.metamaskAuthUi {
+
+}
+.metamaskAuthUi .buttons {
+  display: flex;
+  margin: 8px 0px;
+  flex-direction: column;
+}
+.metamaskAuthUi .buttons .button {
+  display: flex;
+  padding: 10px 15px;
+  background-color: #2e2e2e;
+  border: 1px solid #3e3e3e;
+  color: #FFF;
+  font-family: 'PlazaRegular';
+  font-size: 28px;
+  cursor: pointer;
+  align-items: center;
+  user-select: none;
+  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.metamaskAuthUi .buttons .button:hover {
+  background-color: #3e3e3e;
+}
+.metamaskAuthUi .buttons .button .image {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+}
+.metamaskAuthUi .buttons .button .text {
+}

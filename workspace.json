@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "@webaverse-studios/client": "packages/client",
+    "@webaverse-studios/compiler": "packages/compiler",
+    "engine": "packages/engine",
+    "engine-wasm": "packages/engine-wasm",
+    "metaversefile": "packages/metaversefile",
+    "multiplayer": "packages/multiplayer",
+    "offscreen-engine": "packages/offscreen-engine",
+    "test-e2e": "packages/test-e2e",
+    "webaverse-previewer": "packages/previewer",
+    "wsrtc": "packages/wsrtc",
+    "zjs": "packages/zjs"
+  }
+}

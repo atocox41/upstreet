@@ -1,0 +1,50 @@
+.authDivider {
+  height: 5px !important;
+  margin: 0;
+  background-color: #222 !important;
+  /* border-radius: 50% !important; */
+}
+.authButton {
+  /* padding-top: 15px !important; */
+  width: 200px !important;
+  font-size: 28px !important;
+  letter-spacing: 2px !important;
+  text-align: center !important;
+  border-radius: 0 !important;
+}
+.authButton > svg {
+  --size: 36px;
+  /* position: relative; */
+  /* top: -5px; */
+  width: var(--size);
+  height: var(--size);
+}
+.authButton::after {
+  margin-left: auto;
+  content: '';
+}
+.authInput {
+  font-size: 18px !important;
+  border-radius: 0 !important;
+}
+.authInput,
+.authInput::placeholder
+{
+  letter-spacing: 2px !important;
+}
+.authContainer {
+  /* background: red; */
+}
+.authAnchor {
+  /* margin-bottom: 5px !important; */
+  /* font-size: 16px !important; */
+  color: #FFFFFF40 !important;
+  /* letter-spacing: 2px !important; */
+  text-align: left !important;
+  text-decoration: none !important;
+}
+.authAnchor:hover {
+  color: #FFFFFF80 !important;
+}
+.authMessage {
+}

@@ -1,0 +1,286 @@
+/* @keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+/* */
+
+.row {
+  display: flex;
+}
+
+/* */
+
+.storyUI {
+  --image-size: 100px;
+  /* --font: 'Anime Ace'; */
+  --font: 'Manga Temple';
+  --size: 300px;
+
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: var(--size);
+  min-height: 100vh;
+  /* padding: 15px; */
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, #000 0%, #222 0%);
+  /* background-color: #000; */
+  font-family: var(--font);
+  font-size: 13px;
+  color: #FFF;
+  transition: transform 0.3s cubic-bezier(0, 1, 0, 1);
+  z-index: 1;
+}
+.storyUI:not(.open) {
+  transform: translateX(var(--size));
+}
+.storyUI h1,
+.storyUI h2,
+.storyUI h3,
+.storyUI h4,
+.storyUI h5,
+.storyUI h5,
+.storyUI p
+{
+  margin-top: 0;  
+}
+
+/* */
+
+.storyUI .conversation {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  padding-bottom: 60px;
+  /* flex: 1; */
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+/* */
+
+.storyUI .conversation .character,
+.storyUI .conversation .setting
+{
+  display: flex;
+  flex-direction: column;
+  /* background-color: #EEE; */
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+/* */
+
+.storyUI .conversation .inputBar,
+.storyUI .conversation .inputBarPlaceholder {
+  /* height: 100px; */
+}
+.storyUI .conversation .inputBar.hasFiles,
+.storyUI .conversation .inputBarPlaceholder.hasFiles {
+  /* height: 230px; */
+}
+
+.storyUI .conversation .inputBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* background-color: #000; */
+}
+
+.storyUI .conversation .inputBar .button {
+  color: #FFF;
+}
+.storyUI .conversation .inputBar .button:hover {
+  color: #000;
+  border-color: #FFF;
+  background-color: #FFF;
+}
+
+
+/* */
+
+.storyUI .messages {
+  display: flex;
+  flex-direction: column;
+}
+.storyUI .messages .message {
+  display: flex;
+  flex-direction: column;
+}
+.storyUI .messages .message:not(.hero) .wrap {
+  display: flex;
+}
+.storyUI .messages .message .name {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+/* */
+
+.storyUI .messages .message.text img {
+  display: inline-flex;
+  width: var(--image-size);
+  height: var(--image-size);
+}
+
+/* */
+
+.storyUI .messages .message.setting img {
+  height: var(--image-size);
+  width: 100%;
+  object-fit: cover;
+}
+
+/* */
+
+.storyUI .messages .message.character img {
+  height: var(--image-size);
+  width: var(--image-size);
+  margin: auto;
+  object-fit: cover;
+  border-radius: 1000px;
+}
+
+.storyUI .inputPrefix {
+  white-space: pre;
+}
+.storyUI .input {
+  min-width: 0;
+  margin-right: 5px;
+  flex: 1;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  outline: none;
+}
+/* .storyUI .input::before {
+  content: '> ';
+} */
+
+/* */
+
+.storyUI .messageInput {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  border-radius: 5px;
+  user-select: none;
+}
+
+.storyUI .messageInput .input {
+  margin-bottom: 10px;
+}
+
+.storyUI .messageInput .attachments {
+  display: inline-flex;
+}
+
+.storyUI .messageInput .attachments .attachment {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background: #222;
+  border-radius: 5px;
+}
+
+.storyUI .messageInput .attachments .attachment .img {
+  width: var(--image-size);
+  height: var(--image-size);
+}
+.storyUI .messageInput .attachments .attachment .img.placeholder:not(.small) {
+  padding: 15px;
+}
+.storyUI .messageInput .attachments .attachment .img.placeholder.small {
+  width: 15px;
+  height: 15px;
+}
+
+.storyUI .messageInput .attachments .attachment .name {
+  max-width: var(--image-size);
+  height: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #FFF;
+}
+
+.storyUI .messageInput .attachments .attachment .remove {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #222;
+  cursor: pointer;
+}
+.storyUI .messageInput .attachments .attachment .remove:hover {
+  background-color: #e53935;
+}
+.storyUI .messageInput .attachments .attachment .remove:active {
+  background-color: #c62828;
+}
+
+.storyUI .messageInput .attachments .attachment .remove .img {
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  filter: invert(1);
+}
+
+.storyUI .messageInput .smallButton {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.storyUI .messageInput .smallButton:not(:last-child) {
+  margin-right: 5px;
+}
+.storyUI .messageInput .smallButton:hover {
+  background-color: #1e88e5;
+}
+.storyUI .messageInput .smallButton:active {
+  background-color: #1565c0;
+}
+
+.storyUI .messageInput .smallButton .img {
+  width: 50px;
+  height: 30px;
+  padding: 5px;
+  filter: invert(1);
+}
+
+/* */
+
+.scrollbar::-webkit-scrollbar {
+	width: 8px;
+	background-color: #000;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+	background-color: #222;
+  border-radius: 3px;
+}
+.scrollbar::-webkit-scrollbar-thumb:hover {
+	background-color: #333;
+}
+.scrollbar::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #000;
+}

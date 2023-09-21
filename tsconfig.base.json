@@ -1,0 +1,33 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@@webaverse-studios/webaverse/engine-wasm": [
+        "packages/engine-wasm/src/index.ts"
+      ],
+      "@webaverse-studios/client": ["packages/client"],
+      "@webaverse-studios/compiler": ["packages/compiler"],
+      "@webaverse-studios/engine": ["packages/engine/index.js"],
+      "metaversefile": ["packages/metaversefile"],
+      "multiplayer": ["packages/multiplayer"],
+      "offscreen-engine": ["packages/offscreen-engine"],
+      "webaverse-previewer": ["packages/previewer"],
+      "wsrtc": ["packages/wsrtc"],
+      "zjs": ["packages/zjs"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

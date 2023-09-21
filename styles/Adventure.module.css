@@ -1,0 +1,748 @@
+.canvas,
+.dropTarget
+{
+  width: 100vw;
+  height: 100vh;
+}
+
+.adventureApp {
+  --ui-line-height: 30px;
+}
+.adventureApp .videoWrap {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  pointer-events: none;
+  transition: all 2s cubic-bezier(0, 1, 0, 1);
+}
+.adventureApp .videoWrap:active {
+  transform: scale(0.8);
+}
+.adventureApp .videoWrap.entered {
+  transform: scale(1.3);
+  opacity: 0;
+  pointer-events: none;
+}
+.adventureApp .videoWrap .video {
+  width: 700px;
+  /* margin: auto; */
+  object-fit: contain;
+}
+
+/*
+make the caption glow
+and also make it pulsate like a heart
+*/
+@keyframes glow {
+  0% {
+    filter: invert(0);
+    transform: scale(1);
+  }
+  45% {
+    filter: invert(1);
+    transform: scale(1.1);
+  }
+  50% {
+    filter: invert(1);
+    transform: scale(1);
+  }
+  55% {
+    filter: invert(1);
+    transform: scale(1.1);
+  }
+  100% {
+    filter: invert(0);
+    transform: scale(1);
+  }
+}
+.adventureApp .videoWrap .caption {
+  position: relative;
+  top: -70px;
+  color: #FFF;
+  font-family: 'Muli';
+  font-size: 30px;
+  animation: glow 1s infinite;
+  transform-origin: center;
+}
+
+/* */
+
+.cameraTargetUi {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.cameraTargetUi .name,
+.cameraTargetUi .description
+{
+  color: #FFF;
+}
+
+/* */
+
+.helperUi {
+  display: flex;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  height: 100px;
+  padding: 5px;
+  align-items: center;
+  color: #FFF;
+  font-size: 10px;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, #333, #111);
+  user-select: none;
+  transition: transform 0.5s cubic-bezier(0, 1, 0, 1);
+  z-index: 1;
+}
+.helperUi.hidden {
+  transform: translateY(calc(100px + 15px));
+}
+.helperUi .grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.helperUi .grid .row {
+  display: flex;
+}
+
+.helperUi .image {
+  width: 30px;
+  height: 30px;
+  filter: invert(1);
+}
+
+.helperUi .key {
+  display: flex;
+  margin: 0 2px;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.helperUi .key:hover .box {
+  background-color: #FFF;
+  color: #000;
+}
+.helperUi .key:active .box {
+  opacity: 0.7;
+}
+.helperUi .box,
+.helperUi .boxPlaceholder
+{
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+.helperUi .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+}
+.helperUi .name {
+  display: flex;
+  justify-content: center;
+}
+.helperUi .box.small {
+  font-size: 8px;
+}
+
+.helperUi .wrap {
+  display: flex;
+  margin: 0 10px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.helperUi .wrap:hover:not(:active) {
+  opacity: 1;
+}
+
+/* */
+
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 2;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.header > .wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.header .row {
+  display: flex;
+}
+.header .spacer {
+  flex: 1;
+  height: 50px;
+}
+.header .label {
+  display: flex;
+  height: var(--ui-line-height);
+  align-items: center;
+}
+.header .label .text {
+  margin-right: 10px;
+  font-family: 'PlazaRegular';
+  font-size: 16px;
+  color: #FFF;
+}
+.header .label .select {
+  margin: auto 0;
+}
+.button {
+  position: relative;
+  display: flex;
+  padding: 5px 10px;
+  margin: auto 0;
+  /* margin-bottom: 1px; */
+  color: #FFF;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 2s cubic-bezier(0, 1, 0, 1);
+  pointer-events: all;
+}
+.button .background
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to bottom, #333, #111);
+  transform: skewX(-22deg);
+}
+.button.reverse .img {
+  transform: rotateZ(90deg);
+}
+.button .text {
+  position: relative;
+  font-family: 'Exo';
+}
+.button .img {
+  width: 16px;
+  height: 16px;
+  transform: rotateZ(-90deg);
+  filter: invert(1);
+}
+.button .background {
+  border: 2px solid transparent;
+}
+.button .background {
+  border-radius: 5px;
+  transition: all 0.3s cubic-bezier(0, 1, 0, 1);
+}
+.button:hover .background {
+  background-image: none;
+  background-color: #2196F3;
+  border-color: #FFFFFF40;
+}
+.button:active .background {
+  background-color: #1976D2;
+}
+.button.disabled {
+  color: #FFFFFF40;
+  pointer-events: none;
+}
+.button.marginRight {
+  margin-right: 10px;
+}
+
+.header .modeUi,
+.header .locationUi,
+.header .mapUi,
+.header .interactionUi
+{
+  margin-left: auto;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background-image: linear-gradient(to bottom, #333, #111);
+  border-radius: 5px;
+  pointer-events: all;
+}
+.header .coords {
+  padding: 5px 10px;
+  font-family: 'Exo';
+  background-color: #111;
+  color: #FFF;
+}
+
+.header .loginModal {
+  position: absolute;
+  display: flex;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  padding: 30px;
+  background-image: linear-gradient(to bottom, #222, #111111);
+  pointer-events: all;
+  cursor: default;
+  overflow-y: auto;
+}
+
+.header .wrap.hidden {
+  display: none;
+}
+
+.header .wrap.slide {
+  transform: translateX(100px);
+  transition: transform 0.15s cubic-bezier(1, 0, 1, 0);
+}
+.header .wrap.slide.visible {
+  transform: none;
+  transition: transform 0.15s cubic-bezier(0, 1, 0, 1);
+}
+
+/* */
+
+.userAccount {
+  z-index: 1;
+}
+.header .row .userAccount + .button {
+  margin-left: 5px;
+}
+
+/* */
+
+.deployUi {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  padding: 15px;
+  background-image: linear-gradient(to bottom, #111, #333);
+  border-radius: 5px;
+  color: #FFF;
+  font-family: 'Exo';
+  z-index: 2;
+}
+.deployUi .textarea {
+  width: 400px;
+  height: 300px;
+  /* outline: none; */
+}
+.deployUi .textarea:disabled {
+  background-color: #FFF;
+  resize: none;
+  overflow: auto;
+}
+
+.deployUi .row {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.deployUi .label {
+  margin-right: auto;
+}
+.deployUi .icon {
+  display: flex;
+  cursor: pointer;
+}
+.deployUi .icon:hover {
+  opacity: 0.75;
+}
+.deployUi .icon:active {
+  opacity: 0.5;
+}
+.deployUi .icon .img {
+  width: 16px;
+  height: 16px;
+  filter: invert(1);
+}
+
+/* */
+
+.inventoryUi {
+  display: flex;
+  position: fixed;
+  top: 10px;
+  bottom: 10px;
+  right: 10px;
+  width: 400px;
+  padding: 15px;
+  background-image: linear-gradient(to bottom, #111, #333);
+  border: 2px solid #FFFFFF10;
+  border-radius: 10px;
+  color: #FFF;
+  font-family: 'Exo';
+  flex-direction: column;
+  z-index: 2;
+  pointer-events: all;
+}
+.inventoryUi .row {
+  display: flex;
+  align-items: center;
+}
+.inventoryUi .icon {
+  margin-left: auto;
+  cursor: pointer;
+  user-select: none;
+}
+.inventoryUi .icon .img {
+  width: 12px;
+  height: 12px;
+  filter: invert(1);
+  opacity: 0.5;
+}
+.inventoryUi .icon:hover .img {
+  opacity: 1;
+}
+.inventoryUi .h {
+  font-family: 'WinchesterCaps';
+  font-size: 16px;
+  color: #FFF;
+}
+.inventoryUi .tabs {
+  display: flex;
+}
+.inventoryUi .tabs .tab {
+  display: flex;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-bottom: 2px solid transparent;
+  justify-content: center;
+  color: #FFFFFF80;
+  cursor: pointer;
+  user-select: none;
+  flex: 1;
+}
+.inventoryUi .tabs .tab:hover {
+  color: #FFF;
+}
+.inventoryUi .tabs .tab.selected {
+  color: #FFF;
+  border-bottom: 2px solid #FFF;
+}
+
+.inventoryUi .content {
+  height: 300px;
+}
+
+.inventoryUi .placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  /* margin: 0 auto; */
+  font-family: 'PlazaRegular';
+  font-size: 20px;
+}
+
+.inventoryUi .item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+.inventoryUi .item:hover {
+  background-color: #222;
+  border-radius: 5px;
+}
+.inventoryUi .previewImg {
+  display: flex;
+  width: 64px;
+  height: 64px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+.inventoryUi .chooseImg {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+.inventoryUi .placeholderImg {
+  filter: invert(1);
+}
+.inventoryUi .name {
+  flex: 1;
+  padding: 0 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.inventoryUi .category {
+  max-width: 150px;
+  padding: 0 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.inventoryUi .btn {
+  display: flex;
+  padding: 5px;
+  margin-right: 5px;
+  background-image: linear-gradient(to bottom, #111, #000);
+  border: 1px solid #FFFFFF20;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.inventoryUi .btn:hover {
+  background-image: linear-gradient(to bottom, #222, #111);
+}
+.inventoryUi .btn:active {
+  background-image: linear-gradient(to bottom, #333, #222);
+}
+
+.inventoryUi .btn .chevron {
+  width: 12px;
+  height: 12px;
+  margin: auto 0;
+  margin-left: 5px;
+  filter: invert(1);
+  transform: rotateZ(-90deg);
+}
+
+.inventoryUi .iconBtn {
+  cursor: pointer;
+}
+.inventoryUi .iconBtn .img {
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+  filter: invert(1);
+}
+.inventoryUi .iconBtn:hover .img {
+  opacity: 0.75;
+}
+.inventoryUi .iconBtn:active .img {
+  opacity: 0.5;
+}
+
+.inventoryUi .content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.inventoryUi .createUi .input {
+  width: 100%;
+  padding: 5px 10px;
+  border: 0;
+  border-bottom: 2px solid #CCC;
+  background: transparent;
+  color: #FFF;
+  font-family: 'Exo';
+  font-size: 16px;
+  outline: none;
+}
+.inventoryUi .createUi .input:hover {
+  border-bottom-color: #FFF;
+}
+
+.inventoryUi .createUi .label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.inventoryUi .createUi .label .text {
+  font-family: 'WinchesterCaps';
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.inventoryUi .createUi .textarea {
+  width: 100%;
+  height: 200px;
+}
+
+.inventoryUi .createUi .row {
+  margin-bottom: 20px;
+}
+
+.inventoryUi .createUi .middle {
+  align-items: center;
+}
+
+/* */
+
+.interactionUi .key {
+  display: flex;
+  width: var(--ui-line-height);
+  height: var(--ui-line-height);
+  margin-right: 5px;
+  padding: 3px;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  border: 2px solid #FFFFFF20;
+  border-radius: 5px;
+  color: #FFF;
+  font-family: 'PlazaRegular';
+  font-size: 16px;
+}
+
+.interactionUi .details {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  font-family: 'Exo';
+  color: #FFF;
+}
+.interactionUi .details .name {
+  height: var(--ui-line-height);
+  font-size: 20px;
+}
+.interactionUi .details .description {
+  opacity: 0.7;
+  max-height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* */
+
+.backButton {
+  /* margin-right: auto; */
+  cursor: pointer;
+}
+.backButton .img {
+  width: 24px;
+  height: 24px;
+}
+.backButton:hover .img {
+  opacity: 0.75;
+}
+.backButton:active .img {
+  opacity: 0.5;
+}
+
+/* */
+
+.sceneEditor {
+  margin-left: auto;
+  color: #FFF;
+  pointer-events: all;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* to bottom, #333, #111, 70% transparency */
+  background-image: linear-gradient(to bottom, rgba(51, 51, 51, .7), rgba(17, 17, 17, .7));
+
+
+  border-radius: 5px;
+}
+
+.sceneEditor .objects {
+  display: flex;
+  flex-direction: column;
+}
+.sceneEditor .objects .objectsObject {
+  display: flex;
+  flex-direction: column;
+  background: #111;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  font-family: 'PlazaRegular';
+  font-size: 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.sceneEditor .objects .objectsObject + .objectsObject {
+  margin-top: 0;
+}
+.sceneEditor .objects .objectsObject .type {
+  display: inline-flex;
+  margin-right: auto;
+  padding: 5px;
+  background-color: #222;
+  border: 1px solid #FFFFFF20;
+  border-radius: 5px;
+  font-size: 10px;
+  font-family: 'Exo';
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+.sceneEditor .objects .objectsObject .name {
+  font-size: 14px;
+  line-height: 1.4;
+}
+.sceneEditor .objects .objectsObject .description {
+  font-family: 'Exo';
+  font-size: 12px;
+  color: #FFFFFF80;
+}
+.sceneEditor .objects .objectsObject:hover {
+  background: #2196F3;
+}
+.sceneEditor .objects .objectsObject:active {
+  background: #1976D2;
+}
+
+.sceneEditor .selectedApp {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  font-family: 'PlazaRegular';
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-top: 0;
+  padding: 10px;
+}
+.sceneEditor .selectedApp .wrap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.sceneEditor .selectedApp .wrap .row {
+  align-items: center;
+}
+.sceneEditor .selectedApp hr {
+  margin-bottom: 10px;
+  visibility: hidden;
+}
+.sceneEditor .subheader {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-family: 'PlazaRegular';
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.sceneEditor .subheader .text {
+  margin-right: auto;
+}
+
+/* */
+
+.transformControls {
+  display: flex;
+  flex-direction: column;
+}
+.transformControls .label {
+  display: flex;
+  margin-bottom: 5px;
+}
+.transformControls .label .text {
+  width: 80px;
+  margin-right: 5px;
+}

@@ -1,0 +1,18 @@
+.stripeUi.subscribing .subscription,
+.stripeUi:not(.subscribing) .placeholder
+{
+  display: none;
+}
+.stripeUi form {
+  margin: 10px 0;
+}
+.stripeUi form > div {
+  background-color: #FFF;
+}
+.stripeUi .textarea {
+  width: 100%;
+  min-height: 200px;
+}
+.stripeUi .form .submit {
+  margin-top: 10px;
+}

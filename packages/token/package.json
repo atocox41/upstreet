@@ -1,0 +1,17 @@
+{
+  "name": "token",
+  "version": "0.0.1",
+  "description": "",
+  "main": "metamask.mjs",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "wrangler dev --port 4444",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "ethers": "5.6.1",
+    "limiter": "^2.1.0",
+    "lru-cache": "^10.0.1"
+  }
+}

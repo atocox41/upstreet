@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'TTSC-Regular';
+  src:  url('/fonts/TT Squares Condensed Regular.otf');
+}
+@font-face {
+  font-family: 'TTSC-Bold';
+  src:  url('/fonts/TT Squares Condensed Bold.otf');
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "TTSC-Regular", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    color: #FFFFFF;
+}
+
+/* hide body scrollbar */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body,html {
+    color: #FFFFFF;
+    background-image: url('/assets/main-background.jpg');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

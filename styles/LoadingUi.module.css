@@ -1,0 +1,49 @@
+.loadingUi {
+  position: fixed;
+  top: 0;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-flow: column;
+  transition: all 2s cubic-bezier(0, 1, 0, 1);
+}
+.loadingUi.done {
+  opacity: 0;
+  transform: scale(1.1);
+  pointer-events: none;
+}
+
+.loadingUi .progress {
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: auto;
+}
+.loadingUi .percent {
+  position: relative;
+  margin: 0 auto;
+  font-family: 'Exo';
+  font-size: 30px;
+  color: #FFF;
+}
+.loadingUi .name {
+  position: relative;
+  margin: 0 auto;
+  font-family: 'Exo';
+  font-size: 20px;
+  color: #FFF;
+}
+.loadingUi .background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  transform: scale(1.1);
+  /* modern blur */
+  filter: blur(10px);
+}

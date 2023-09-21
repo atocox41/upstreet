@@ -1,0 +1,8 @@
+{
+  "name": "chest",
+  "description": "chest",
+  "start_url": "index.js",
+  "components": {
+    "activate": true
+  }
+}

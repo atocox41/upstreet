@@ -1,0 +1,27 @@
+[
+  {
+    "name": "ShiShi voice pack",
+    "indexPath": "/shishi/sound-files.json",
+    "audioPath": "/shishi/sounds.mp3"
+  },
+  {
+    "name": "Bryce voice pack",
+    "indexPath": "/bryce/sound-files.json",
+    "audioPath": "/bryce/sounds.mp3"
+  },
+  {
+    "name": "Andrew voice pack",
+    "indexPath": "/andrew/sound-files.json",
+    "audioPath": "/andrew/sounds.mp3"
+  },
+  {
+    "name": "Griffin voice pack",
+    "indexPath": "/griffin/sound-files.json",
+    "audioPath": "/griffin/sounds.mp3"
+  },
+  {
+    "name": "Tiffany voice pack",
+    "indexPath": "/tiffany/sound-files.json",
+    "audioPath": "/tiffany/sounds.mp3"
+  }
+]

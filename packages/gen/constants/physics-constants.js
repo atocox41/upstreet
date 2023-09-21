@@ -1,0 +1,1 @@
+export const heightfieldScale = 0.1; // must fit heightfield in int16

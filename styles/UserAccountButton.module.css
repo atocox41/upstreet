@@ -1,0 +1,162 @@
+.profileImage {
+  background: #000;
+  border: 2px solid #000000;
+  width: 50px;
+  height: 50px;
+  /* margin-bottom: -4px; */
+  /* margin-right: 4px; */
+  user-select: none;
+}
+
+.userBar li {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.walletAddressDiv {
+  background-image: linear-gradient(to bottom, #333, #111);
+  transform: skewX(-22deg);
+  padding: 0px 10px;
+}
+
+.button {
+  position: relative;
+  display: flex;
+  padding: 5px 10px;
+  margin-bottom: 1px;
+  color: #FFF;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 2s cubic-bezier(0, 1, 0, 1);
+  pointer-events: all;
+}
+.button .background
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to bottom, #333, #111);
+  transform: skewX(-22deg);
+}
+.button .text {
+  position: relative;
+  font-family: 'Exo';
+}
+.button .background {
+  border: 2px solid transparent;
+}
+.button .background {
+  border-radius: 5px;
+  transition: all 0.3s cubic-bezier(0, 1, 0, 1);
+}
+.button:hover .background {
+  background-image: none;
+  background-color: #2196F3;
+  border-color: #FFFFFF40;
+}
+.button:active .background {
+  background-color: #1976D2;
+}
+.button.disabled {
+  color: #FFFFFF40;
+  pointer-events: none;
+}
+
+/* */
+
+.loginModal {
+  position: absolute;
+  display: flex;
+  top: 0;
+  right: 0;
+  /* width: 300px; */
+  height: 100vh;
+  padding: 30px;
+  background-image: linear-gradient(to bottom, #222, #111111);
+  pointer-events: all;
+  cursor: default;
+  overflow-y: auto;
+}
+
+/* */
+
+.icons {
+  display: flex;
+  margin-left: auto;
+}
+.icons .icon:hover {
+  opacity: 0.75;
+}
+.icons .icon:active {
+  opacity: 0.5;
+}
+.icons .icon .image {
+  width: 32px;
+  height: 32px;
+  transition: opacity 2s cubic-bezier(0, 1, 0, 1);
+}
+.icons .icon .image.invert {
+  filter: invert(1);
+}
+
+/* */
+
+.navs {
+  display: flex;
+  margin-right: auto;
+  user-select: none;
+}
+.navs .nav {
+  cursor: pointer;
+}
+.navs .nav:hover {
+  opacity: 0.75;
+}
+.navs .nav:hover {
+  opacity: 0.5;
+}
+.navs .nav .image {
+  width: 32px;
+  height: 32px;
+}
+
+/* */
+
+.userAccount {
+  display: flex;
+  align-items: center;
+}
+.userAccount .user {
+  position: relative;
+  display: flex;
+  margin-right: 10px;
+  font-family: 'Exo';
+  cursor: pointer;;
+  pointer-events: all;
+}
+.userAccount .user:hover .profileImage {
+  transform: scale(1.1);
+}
+.userAccount .user:active .profileImage {
+  transform: none;
+}
+.userAccount .user .name {
+  margin: auto 0;
+  padding: 5px 10px;
+  background: #000;
+  border-color: #FFFFFF40;
+  border-radius: 0 5px 5px 0;
+  color: #FFF;
+  align-items: center;
+  user-select: none;
+}
+.userAccount .user:hover .name {
+  background-color: #2196F3;
+}
+.userAccount .user:active .name {
+  background-color: #1976D2;
+}

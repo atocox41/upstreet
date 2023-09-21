@@ -1,0 +1,192 @@
+.mainMenu {
+  /* position: relative; */
+  margin: 0;
+  padding: 0;
+  margin-top: -20px;
+
+  display: flex;
+  flex-direction: column;
+
+  transform-origin: 50% 50%;
+
+  z-index: 1;
+}
+.mainMenu.needsStartPressed .options {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.8);
+  transition: all 2s cubic-bezier(0, 1, 0, 1);
+}
+.mainMenu.needsStartPressed.startPressed .options {
+  opacity: 1;
+  transform: none;
+  pointer-events: all;
+}
+
+/* */
+
+.mainMenu .bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+/* */
+
+/* .mainMenu .wrap {
+  position: relative;
+  display: flex;
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 200px;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.mainMenu .loginWrap {
+  background-image: linear-gradient(to bottom, #222, #000);
+}
+
+/* */
+
+.mainMenu .header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* */
+
+.mainMenu .header .title {
+  --fontSize: 80px;
+  position: relative;
+  margin: 15px 0;
+  padding: 30px 50px;
+}
+.mainMenu .header .subtitle {
+  --fontSize: 1.5vw;
+  position: relative;
+  padding: 1vw 2vw;
+}
+
+.mainMenu .header .title .text {
+  position: relative;
+  top: 18px;
+  color: #FFF;
+  font-family: 'Exo';
+  /* font-family: 'WinchesterCaps'; */
+  font-size: var(--fontSize);
+  letter-spacing: calc(var(--fontSize) * 0.05);
+}
+.mainMenu .header .subtitle .text {
+  position: relative;
+  color: #FFF;
+  /* font-family: 'PlazaRegular'; */
+  font-size: var(--fontSize);
+  letter-spacing: calc(var(--fontSize) * 0.05);
+}
+.mainMenu .header .title .background,
+.mainMenu .header .subtitle .background,
+.mainMenu .options .option .background
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  transform: skewX(-22deg);
+}
+
+/* float up and down */
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.mainMenu .logo {
+  position: relative;
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  margin-top: -5vw;
+  animation: floatUpDown 4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* */
+
+/* .options is a ul, so get rid of the default styles */
+.mainMenu .options,
+.mainMenu .options .option
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.mainMenu .options {
+  display: flex;
+  flex-direction: column;
+  /* background-color: #000;
+  color: #FFF; */
+  margin-top: -100px;
+}
+.mainMenu .options .option {
+  /* --lightArrowSize: 1vw; */
+
+  position: relative;
+  display: flex;
+  padding-left: 1vw;
+  margin-bottom: 1px;
+  color: #FFF;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 2s cubic-bezier(0, 1, 0, 1);
+}
+/* .mainMenu .options .option.selected {
+  z-index: 1;
+} */
+.mainMenu .options .option .background {
+  border: 2px solid transparent;
+}
+.mainMenu .options .option .background {
+  border-radius: 5px;
+  transition: all 0.3s cubic-bezier(0, 1, 0, 1);
+}
+.mainMenu .options .option.selected .background {
+  background-color: #2196F3;
+  border-color: #FFFFFF40;
+}
+.mainMenu .options .option.active .background {
+  background-color: #1976D2;
+}
+
+.mainMenu .options .option .text {
+  position: relative;
+  padding: 10px 32px;
+}
+
+.mainMenu .options .option .lightArrow {
+  position: absolute;
+  top: -15px;
+  left: -40px;
+  z-index: 1;
+  transform: rotateZ(-90deg);
+}
+.mainMenu .options .option.active .lightArrow {
+  transform: translateX(20px) rotateZ(-90deg);
+  transition: transform 2s cubic-bezier(0, 1, 0, 1);
+}

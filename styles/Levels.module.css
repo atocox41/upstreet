@@ -1,0 +1,109 @@
+.levelsApp {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+/* */
+
+.modes {
+  display: flex;
+  margin-bottom: 10px;
+}
+.modes .mode {
+  display: flex;
+  margin-right: 5px;
+  padding: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.modes .mode.selected {
+  color: #FFF;
+  background-color: #000;
+}
+
+/* */
+
+.tabs {
+  display: flex;
+  margin-bottom: 10px;
+}
+.tabs .tab {
+  display: flex;
+  margin-right: 5px;
+  padding: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.tabs .tab.selected {
+  color: #FFF;
+  background-color: #000;
+}
+
+/* */
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+form input {
+  margin-bottom: 10px;
+}
+
+/* */
+
+.levels {
+  display: flex;
+  flex-direction: column;
+}
+.levels .level {
+  display: flex;
+}
+.levels .level .wrap {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+.levels .level .wrap .name {
+  font-weight: 600;
+  font-size: 20px;
+}
+.levels .level .wrap .description {
+  /* font-weight: 600; */
+  font-size: 15px;
+}
+.levels .level .img {
+  width: 300px;
+  height: 150px;
+}
+
+/* */
+
+.levels .level .link {
+  margin: 0 5px;
+}
+.levels .level .button {
+  margin: 0 5px;
+  cursor: pointer;
+}
+.levels .level .button img {
+  width: 20px;
+  height: 20px;
+}
+
+/* */
+
+.levels header {
+  display: flex;
+  flex-direction: column;
+}
+.levels .header .label {
+  display: flex;
+}
+.levels .header .label .text {
+
+}
+.levels .header .label .checkbox {
+  
+}

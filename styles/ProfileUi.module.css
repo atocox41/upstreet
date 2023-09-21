@@ -1,0 +1,9 @@
+.profileUi {
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+}
+.profileUi .wrap {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,19 @@
+{
+  "objects": [
+    {
+      "type": "application/spawnpoint",
+      "content": {
+        "position": [0,60,0],
+        "quaternion": [0, 0.0,0, 0.0]
+      }
+    },
+    {
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "start_url": "https://avaer.github.io/webaverse-terrain/"
+    }
+  ]
+}

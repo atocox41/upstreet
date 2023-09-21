@@ -1,0 +1,53 @@
+.adventureControlsUi .cursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 0.2s cubic-bezier(0, 1, 0, 1), transform 0.2s cubic-bezier(0, 1, 0, 1);
+}
+.adventureControlsUi .cursor:not(.hovered) {
+  opacity: 0;
+  transform: scale(0.1);
+}
+
+/* */
+
+.adventureControlsUi .selectedAppUi {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  padding: 20px;
+  background-image: linear-gradient(to bottom, #222, #000);
+  color: #FFF;
+  z-index: 1;
+}
+.adventureControlsUi .selectedAppUi .name {
+  font-family: 'WinchesterCaps';
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+.adventureControlsUi .selectedAppUi .description {
+  font-family: 'PlazaRegular';
+  font-size: 24px;
+  line-height: 1.4;
+}
+.adventureControlsUi .selectedAppUi .pill {
+  border: 1px solid #FFFFFF80;
+  color: #FFF;
+}
+.adventureControlsUi .selectedAppUi .pill.blue {
+  background-image: linear-gradient(to bottom, #4e54c8, #8f94fb);
+}
+.adventureControlsUi .selectedAppUi .pill.orange {
+  background-image: linear-gradient(to bottom, #fe8c00, #f83600);
+}
+.adventureControlsUi .selectedAppUi .pill.purple {
+  background-image: linear-gradient(to bottom, #8E2DE2, #4A00E0);
+}
+.adventureControlsUi .selectedAppUi .pill.pink {
+  background-image: linear-gradient(to bottom, #f953c6, #b91d73);
+}
+.adventureControlsUi .selectedAppUi .pill.green {
+  background-image: linear-gradient(to bottom, #56ab2f, #a8e063);
+}

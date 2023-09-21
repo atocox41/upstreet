@@ -1,0 +1,1101 @@
+{
+    "voices": [{
+        "voice_id": "21m00Tcm4TlvDq8ikWAM",
+        "name": "Rachel",
+        "samples": null,
+        "category": "premade",
+        "fine_tuning": {
+            "model_id": null,
+            "language": null,
+            "is_allowed_to_fine_tune": false,
+            "fine_tuning_requested": false,
+            "finetuning_state": "not_started",
+            "verification_attempts": null,
+            "verification_failures": [],
+            "verification_attempts_count": 0,
+            "slice_ids": null,
+            "manual_verification": null,
+            "manual_verification_requested": false
+        },
+        "labels": {},
+        "description": null,
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/21m00Tcm4TlvDq8ikWAM/6edb9076-c3e4-420c-b6ab-11d43fe341c8.mp3",
+        "available_for_tiers": [],
+        "settings": null,
+        "sharing": null
+    }, {
+        "voice_id": "AZnzlk1XvdvUeBnXmlld",
+        "name": "Domi",
+        "samples": null,
+        "category": "premade",
+        "fine_tuning": {
+            "model_id": null,
+            "language": null,
+            "is_allowed_to_fine_tune": false,
+            "fine_tuning_requested": false,
+            "finetuning_state": "not_started",
+            "verification_attempts": null,
+            "verification_failures": [],
+            "verification_attempts_count": 0,
+            "slice_ids": null,
+            "manual_verification": null,
+            "manual_verification_requested": false
+        },
+        "labels": {},
+        "description": null,
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/AZnzlk1XvdvUeBnXmlld/69c5373f-0dc2-4efd-9232-a0140182c0a9.mp3",
+        "available_for_tiers": [],
+        "settings": null,
+        "sharing": null
+    }, {
+        "voice_id": "EXAVITQu4vr4xnSDxMaL",
+        "name": "Bella",
+        "samples": null,
+        "category": "premade",
+        "fine_tuning": {
+            "model_id": null,
+            "language": null,
+            "is_allowed_to_fine_tune": false,
+            "fine_tuning_requested": false,
+            "finetuning_state": "not_started",
+            "verification_attempts": null,
+            "verification_failures": [],
+            "verification_attempts_count": 0,
+            "slice_ids": null,
+            "manual_verification": null,
+            "manual_verification_requested": false
+        },
+        "labels": {},
+        "description": null,
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/EXAVITQu4vr4xnSDxMaL/04365bce-98cc-4e99-9f10-56b60680cda9.mp3",
+        "available_for_tiers": [],
+        "settings": null,
+        "sharing": null
+    }, {
+        "voice_id": "ErXwobaYiN019PkySvjV",
+        "name": "Antoni",
+        "samples": null,
+        "category": "premade",
+        "fine_tuning": {
+            "model_id": null,
+            "language": null,
+            "is_allowed_to_fine_tune": false,
+            "fine_tuning_requested": false,
+            "finetuning_state": "not_started",
+            "verification_attempts": null,
+            "verification_failures": [],
+            "verification_attempts_count": 0,
+            "slice_ids": null,
+            "manual_verification": null,
+            "manual_verification_requested": false
+        },
+        "labels": {},
+        "description": null,
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/ErXwobaYiN019PkySvjV/38d8f8f0-1122-4333-b323-0b87478d506a.mp3",
+        "available_for_tiers": [],
+        "settings": null,
+        "sharing": null
+    }, {
+        "voice_id": "MF3mGyEYCl7XYWbV9V6O",
+        "name": "Elli",
+        "samples": null,
+        "category": "premade",
+        "fine_tuning": {
+            "model_id": null,
+            "language": null,
+            "is_allowed_to_fine_tune": false,
+            "fine_tuning_requested": false,
+            "finetuning_state": "not_started",
+            "verification_attempts": null,
+            "verification_failures": [],
+            "verification_attempts_count": 0,
+            "slice_ids": null,
+            "manual_verification": null,
+            "manual_verification_requested": false
+        },
+        "labels": {},
+        "description": null,
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/MF3mGyEYCl7XYWbV9V6O/f9fd64c3-5d62-45cd-b0dc-ad722ee3284e.mp3",
+        "available_for_tiers": [],
+        "settings": null,
+        "sharing": null
+    }, {
+        "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+        "name": "Josh",
+        "samples": null,
+        "category": "premade",
+        "fine_tuning": {
+            "model_id": null,
+            "language": null,
+            "is_allowed_to_fine_tune": false,
+            "fine_tuning_requested": false,
+            "finetuning_state": "not_started",
+            "verification_attempts": null,
+            "verification_failures": [],
+            "verification_attempts_count": 0,
+            "slice_ids": null,
+            "manual_verification": null,
+            "manual_verification_requested": false
+        },
+        "labels": {},
+        "description": null,
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/TxGEqnHWrfWFTfGW9XjX/c6c80dcd-5fe5-4a4c-a74c-b3fec4c62c67.mp3",
+        "available_for_tiers": [],
+        "settings": null,
+        "sharing": null
+    }, {
+        "voice_id": "VR6AewLTigWG4xSOukaG",
+        "name": "Arnold",
+        "samples": null,
+        "category": "premade",
+        "fine_tuning": {
+            "model_id": null,
+            "language": null,
+            "is_allowed_to_fine_tune": false,
+            "fine_tuning_requested": false,
+            "finetuning_state": "not_started",
+            "verification_attempts": null,
+            "verification_failures": [],
+            "verification_attempts_count": 0,
+            "slice_ids": null,
+            "manual_verification": null,
+            "manual_verification_requested": false
+        },
+        "labels": {},
+        "description": null,
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/VR6AewLTigWG4xSOukaG/66e83dc2-6543-4897-9283-e028ac5ae4aa.mp3",
+        "available_for_tiers": [],
+        "settings": null,
+        "sharing": null
+    }, {
+        "voice_id": "pNInz6obpgDQGcFmaJgB",
+        "name": "Adam",
+        "samples": null,
+        "category": "premade",
+        "fine_tuning": {
+            "model_id": null,
+            "language": null,
+            "is_allowed_to_fine_tune": false,
+            "fine_tuning_requested": false,
+            "finetuning_state": "not_started",
+            "verification_attempts": null,
+            "verification_failures": [],
+            "verification_attempts_count": 0,
+            "slice_ids": null,
+            "manual_verification": null,
+            "manual_verification_requested": false
+        },
+        "labels": {},
+        "description": null,
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/pNInz6obpgDQGcFmaJgB/e0b45450-78db-49b9-aaa4-d5358a6871bd.mp3",
+        "available_for_tiers": [],
+        "settings": null,
+        "sharing": null
+    }, {
+        "voice_id": "yoZ06aMxZJJ28mfd3POQ",
+        "name": "Sam",
+        "samples": null,
+        "category": "premade",
+        "fine_tuning": {
+            "model_id": null,
+            "language": null,
+            "is_allowed_to_fine_tune": false,
+            "fine_tuning_requested": false,
+            "finetuning_state": "not_started",
+            "verification_attempts": null,
+            "verification_failures": [],
+            "verification_attempts_count": 0,
+            "slice_ids": null,
+            "manual_verification": null,
+            "manual_verification_requested": false
+        },
+        "labels": {},
+        "description": null,
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/yoZ06aMxZJJ28mfd3POQ/1c4d417c-ba80-4de8-874a-a1c57987ea63.mp3",
+        "available_for_tiers": [],
+        "settings": null,
+        "sharing": null
+    }, {
+        "voice_id": "2J9CAhZvhE0fg9uemD9I",
+        "name": "Tally",
+        "samples": null,
+        "category": "generated",
+        "fine_tuning": {
+            "model_id": null,
+            "language": null,
+            "is_allowed_to_fine_tune": false,
+            "fine_tuning_requested": false,
+            "finetuning_state": "not_started",
+            "verification_attempts": null,
+            "verification_failures": [],
+            "verification_attempts_count": 0,
+            "slice_ids": null,
+            "manual_verification": null,
+            "manual_verification_requested": false
+        },
+        "labels": {
+            "accent": "british",
+            "age": "young",
+            "gender": "female"
+        },
+        "description": null,
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/knvwQzFEGzZtDu4Hl7XpQQQ74NO2/voices/2J9CAhZvhE0fg9uemD9I/7467301b-139e-4bc3-b5b6-78e3644cf64e.mp3",
+        "available_for_tiers": [],
+        "settings": null,
+        "sharing": {
+            "status": "copied",
+            "history_item_sample_id": null,
+            "enabled_in_library": false,
+            "original_voice_id": "MEVOld7oN1xQvffdEf6E",
+            "public_owner_id": "5d30d4a2ec6598900481a1f72bab23755468fd157c39bf18814bab6fb2f50c59",
+            "liked_by_count": 0,
+            "cloned_by_count": 0,
+            "whitelisted_emails": []
+        }
+    }, {
+        "voice_id": "EGMUWEy9FmLXIvebojtl",
+        "name": "Maya",
+        "samples": null,
+        "category": "generated",
+        "fine_tuning": {
+            "model_id": null,
+            "language": null,
+            "is_allowed_to_fine_tune": false,
+            "fine_tuning_requested": false,
+            "finetuning_state": "not_started",
+            "verification_attempts": null,
+            "verification_failures": [],
+            "verification_attempts_count": 0,
+            "slice_ids": null,
+            "manual_verification": null,
+            "manual_verification_requested": false
+        },
+        "labels": {
+            "accent": "american",
+            "age": "young",
+            "gender": "female"
+        },
+        "description": null,
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/knvwQzFEGzZtDu4Hl7XpQQQ74NO2/voices/EGMUWEy9FmLXIvebojtl/9413f959-bc92-420c-90a1-b0295c7a7f6d.mp3",
+        "available_for_tiers": [],
+        "settings": null,
+        "sharing": {
+            "status": "copied",
+            "history_item_sample_id": null,
+            "enabled_in_library": false,
+            "original_voice_id": "poKwQ6TWTH9zweOZCArv",
+            "public_owner_id": "ef66236dea250488608ec7d5c515950d71eaadbf3d15ad842ce01d84be13239a",
+            "liked_by_count": 0,
+            "cloned_by_count": 0,
+            "whitelisted_emails": []
+        }
+    }, {
+        "voice_id": "HuIhiJyeIzGdXp1HGSWY",
+        "name": "mommy",
+        "samples": [{
+            "sample_id": "1CILuhFaeoGqNkDTerRn",
+            "file_name": "untitled - Track 12.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 9161074,
+            "hash": "75d94f3cca9aa7cc4f2f741dd3c8fe6f"
+        }, {
+            "sample_id": "2ZfB47S9Gj9HtptWRfX2",
+            "file_name": "untitled - Track 23.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 9955722,
+            "hash": "24e4d9d9014dd14457b1a9df8967bf96"
+        }, {
+            "sample_id": "3qu7VPOWw6n7DL9804nb",
+            "file_name": "untitled - Track 13.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 9194994,
+            "hash": "28fe0c22926bb29e612e6b67b00c7de5"
+        }, {
+            "sample_id": "6b1CwKt1vxN76V76NBJ7",
+            "file_name": "untitled - Track 8.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 8751450,
+            "hash": "a88f4234216e6c1deb2d96f809fd45b1"
+        }, {
+            "sample_id": "9G0KQZGaHXZnOIMZF1Xy",
+            "file_name": "untitled - Track 4.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 9528290,
+            "hash": "0b423ec23a6ba24f1876cdb754d31af0"
+        }, {
+            "sample_id": "9io23eHlyLtcIHprSNzL",
+            "file_name": "untitled - Track 2.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 10329722,
+            "hash": "28d2692e6ed3b00ce4c89182ed603b54"
+        }, {
+            "sample_id": "BAWWz5lkKW2rCZFpmrR5",
+            "file_name": "untitled - Track 3.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 10179614,
+            "hash": "6157bc9adc1a3d925a5aceb161ace1bd"
+        }, {
+            "sample_id": "CwcOvaTeQ9BDS0RO2bAG",
+            "file_name": "untitled - Track 11.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 8551306,
+            "hash": "6ad51f91fa3c927bf53941df047d2493"
+        }, {
+            "sample_id": "Es4tA5VhNgeVDNyThsdf",
+            "file_name": "untitled - Track 14.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 9752182,
+            "hash": "24229c9829056c4b61dfb46c488296bb"
+        }, {
+            "sample_id": "FLfQOO9ICi348w8yHh9c",
+            "file_name": "untitled - Track 16.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 9351042,
+            "hash": "ed4491e4e9fd6251b166aeccc4b6af4d"
+        }, {
+            "sample_id": "GTz8EsTvtXoJjfJKpb0a",
+            "file_name": "untitled - Track 21.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 10334810,
+            "hash": "d15864c46e6336b9dc7a1a37e2a49fe4"
+        }, {
+            "sample_id": "NW8pGFuKeQKKuN40n0LD",
+            "file_name": "untitled - Track 18.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 10098198,
+            "hash": "3582f4ca893b26be692fa49e361a0c72"
+        }, {
+            "sample_id": "P3Pc7zkcx11YPIFsfjOF",
+            "file_name": "untitled - Track 22.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 9772538,
+            "hash": "4d839057093a050d9cac54e6b6e06600"
+        }, {
+            "sample_id": "Qp9ushGKJX9GMNIeF6uY",
+            "file_name": "untitled - Track 24.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 10341594,
+            "hash": "30658e764b3b05b73ae4e73f31574823"
+        }, {
+            "sample_id": "R265YYuMWS7vgGbT36OF",
+            "file_name": "untitled - Track 9.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 8635266,
+            "hash": "7a4b07ad7054bb78116e78c57d7177f4"
+        }, {
+            "sample_id": "Xao5HlWTdP1Lq9RC0snE",
+            "file_name": "untitled - Track 5.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 9202630,
+            "hash": "91ec1e73fcf63d36e2c67c6c634fdd80"
+        }, {
+            "sample_id": "bUbZoYT3rAmqYkK2gSFq",
+            "file_name": "untitled - Track 6.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 9754726,
+            "hash": "1ee03710502169fc35209ffb12a14a31"
+        }, {
+            "sample_id": "f0lEFGcCeBSX1y7wdy8D",
+            "file_name": "untitled - Track 25.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 10383150,
+            "hash": "1d2a3385c6c65d6cbab46c3e0de040b2"
+        }, {
+            "sample_id": "i6rZxLrNtOFb98vYTxeK",
+            "file_name": "untitled - Track 15.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 9059302,
+            "hash": "5b9cf311a33d182b7f32398998432884"
+        }, {
+            "sample_id": "nDojnbDDMNSnlg0aIksl",
+            "file_name": "untitled - Track 10.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 8929546,
+            "hash": "e47aee6cfe7a57af587f2f91f24ba093"
+        }, {
+            "sample_id": "orOn4YQFB8VgYqvDHYG6",
+            "file_name": "untitled - Track 1.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 10118550,
+            "hash": "50e17b08adb6a771aea4a37829bf63ed"
+        }, {
+            "sample_id": "stmme1gpQcle7PND5uKy",
+            "file_name": "untitled - Track 17.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 9569846,
+            "hash": "82f9d0050157cf316f5616dbf0e36220"
+        }, {
+            "sample_id": "xbvAhCu8hKPlmEoR4gPF",
+            "file_name": "untitled - Track 20.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 9907382,
+            "hash": "b5c49a5ba32651aed7a0cd26f8a6b344"
+        }, {
+            "sample_id": "yckWLnPO945HXQq2SwY7",
+            "file_name": "untitled - Track 19.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 10191486,
+            "hash": "999926fe670f1e785dabe13f1aa670e3"
+        }, {
+            "sample_id": "zuHUQm6t0rvgHMGDHeAE",
+            "file_name": "untitled - Track 7.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 8001750,
+            "hash": "2f3c4bf0f72e8c3994e2e668880f8151"
+        }],
+        "category": "cloned",
+        "fine_tuning": {
+            "model_id": null,
+            "language": null,
+            "is_allowed_to_fine_tune": false,
+            "fine_tuning_requested": false,
+            "finetuning_state": "not_started",
+            "verification_attempts": null,
+            "verification_failures": [],
+            "verification_attempts_count": 0,
+            "slice_ids": null,
+            "manual_verification": null,
+            "manual_verification_requested": false
+        },
+        "labels": {},
+        "description": null,
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/knvwQzFEGzZtDu4Hl7XpQQQ74NO2/voices/HuIhiJyeIzGdXp1HGSWY/0934e20d-baef-4a4b-96f4-088da4332b0e.mp3",
+        "available_for_tiers": [],
+        "settings": null,
+        "sharing": null
+    }, {
+        "voice_id": "NitMuQu7df5ZezO4FAmV",
+        "name": "Eliza",
+        "samples": null,
+        "category": "generated",
+        "fine_tuning": {
+            "model_id": null,
+            "language": null,
+            "is_allowed_to_fine_tune": false,
+            "fine_tuning_requested": false,
+            "finetuning_state": "not_started",
+            "verification_attempts": null,
+            "verification_failures": [],
+            "verification_attempts_count": 0,
+            "slice_ids": null,
+            "manual_verification": null,
+            "manual_verification_requested": false
+        },
+        "labels": {
+            "tone": "soft-spoken",
+            "accent": "american",
+            "age": "young",
+            "gender": "female"
+        },
+        "description": null,
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/knvwQzFEGzZtDu4Hl7XpQQQ74NO2/voices/NitMuQu7df5ZezO4FAmV/435f7b3f-b696-4549-a0f2-603fd2d8a4a0.mp3",
+        "available_for_tiers": [],
+        "settings": null,
+        "sharing": {
+            "status": "copied",
+            "history_item_sample_id": null,
+            "enabled_in_library": false,
+            "original_voice_id": "jzSbH58wuSIjxiCcLTrI",
+            "public_owner_id": "01b7b003147fba338b88795a4f7dd5f13864f57421148324c3eab4f547291064",
+            "liked_by_count": 0,
+            "cloned_by_count": 0,
+            "whitelisted_emails": []
+        }
+    }, {
+        "voice_id": "Rrm9EhD3fZjj20P5izEu",
+        "name": "guilty",
+        "samples": [{
+            "sample_id": "1pQTsbuKnDIuJSbmP3L7",
+            "file_name": "untitled - Track 5.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 9100858,
+            "hash": "2e89e7f960bcc431c585ca1c4100dc0f"
+        }, {
+            "sample_id": "1zxZsfzREAXdHErca7Iq",
+            "file_name": "untitled - Track 1.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 1369790,
+            "hash": "f43b720adf3f2b335ad43ff118481c67"
+        }, {
+            "sample_id": "BRBRMIZTxilYZZng9U0e",
+            "file_name": "untitled - Track 17.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 9853950,
+            "hash": "c3b01361f70deed7fec6be11895fedac"
+        }, {
+            "sample_id": "BhxGzwH4xHpUQFnYDDcD",
+            "file_name": "untitled - Track 8.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 10180462,
+            "hash": "979e86c1505772dd1729d46466f708f1"
+        }, {
+            "sample_id": "BsvPZCvxIbjdojvyjn3r",
+            "file_name": "untitled - Track 20.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 9915014,
+            "hash": "7937be3daec9e244a069ce89ab44c590"
+        }, {
+            "sample_id": "DGkTHdhclEnobx0epSIE",
+            "file_name": "untitled - Track 16.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 9384966,
+            "hash": "09f2a761fac021ea5b29f443fd588a5b"
+        }, {
+            "sample_id": "FugGdV20cOEqJ8Ror1Lh",
+            "file_name": "untitled - Track 18.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 9615642,
+            "hash": "e96f52bf8886dda33084cc99449cba16"
+        }, {
+            "sample_id": "K9TnoKLPaRQ7m2d7qmM8",
+            "file_name": "untitled - Track 24.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 8245998,
+            "hash": "0de4496cf2723af3cd1158e83c31a252"
+        }, {
+            "sample_id": "Kcqn6NNGuX3d5nulDFnm",
+            "file_name": "untitled - Track 12.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 9578326,
+            "hash": "c9a9d857afca6de35f71f83a638fead3"
+        }, {
+            "sample_id": "Oe6Yyb6DRa08phP67Nlz",
+            "file_name": "untitled - Track 9.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 9730982,
+            "hash": "d7240d4841da941306414ce37b147d47"
+        }, {
+            "sample_id": "QXC8VkPBPmZ3WE3GJyQG",
+            "file_name": "untitled - Track 22.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 9303550,
+            "hash": "af4213cf59a590e510fdf4a3af570e99"
+        }, {
+            "sample_id": "UjTtfKKyXgJtjA1DP6Pg",
+            "file_name": "untitled - Track 11.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 10138906,
+            "hash": "d18a7bea828a96d6d4d7b27648c10bd9"
+        }, {
+            "sample_id": "VRPtOnYj9H2nIxwJw34k",
+            "file_name": "untitled - Track 21.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 9866674,
+            "hash": "95716c41b85429ac9c796fc240096797"
+        }, {
+            "sample_id": "bNecznb5i63cCtbtPCui",
+            "file_name": "untitled - Track 3.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 3903846,
+            "hash": "f1d2c94623273a1c68eece44e4f82ef4"
+        }, {
+            "sample_id": "f06WELaCsn6gtSWvGKt6",
+            "file_name": "untitled - Track 4.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 10117702,
+            "hash": "43fbcd54df037a35d0789b0fcaf9dd9c"
+        }, {
+            "sample_id": "fG1WXNqy6JD69EUdoQU5",
+            "file_name": "untitled - Track 14.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 10253394,
+            "hash": "9c542e61199e179866fdd30e8f7e8a05"
+        }, {
+            "sample_id": "j3a6ZIWKM8PogaNkuXVy",
+            "file_name": "untitled - Track 6.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 8327414,
+            "hash": "f01c2df278386de0ff42fef36e9c5a06"
+        }, {
+            "sample_id": "k2AltXtfiE9t98wo0ZJX",
+            "file_name": "untitled - Track 25.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 2741978,
+            "hash": "d3615d7684833e3bf66ea3296d3689d1"
+        }, {
+            "sample_id": "lbD2Vn51knmj3OOcLstK",
+            "file_name": "untitled - Track 15.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 9757270,
+            "hash": "6ec507ad8a531bbee4e0922ff1a2c66c"
+        }, {
+            "sample_id": "nubcYv2GNhK8nOC5EGA9",
+            "file_name": "untitled - Track 23.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 8972798,
+            "hash": "bbf0ae09ad0cf3dffc16c794298ba415"
+        }, {
+            "sample_id": "qQ0GVezZ3PUNmpZwkJOB",
+            "file_name": "untitled - Track 2.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 5221754,
+            "hash": "76e8d844cfcdaac6852bb53ab32f4d43"
+        }, {
+            "sample_id": "tUeTn1XaDEGts1GLcS3L",
+            "file_name": "untitled - Track 13.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 9629210,
+            "hash": "3f4bd1a6106cb94f3da022f4dd0e0d56"
+        }, {
+            "sample_id": "tpWCPqVswXcIntm3X8dv",
+            "file_name": "untitled - Track 10.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 10207598,
+            "hash": "e7f926fdc253dde41c4b7c45c82a5fb4"
+        }, {
+            "sample_id": "vYKAAaIPPfCUSqNaYANv",
+            "file_name": "untitled - Track 7.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 8876966,
+            "hash": "470138e96eab8e4ce8fffe2bbe552194"
+        }, {
+            "sample_id": "yEd9ihoh0at76SU6UKlp",
+            "file_name": "untitled - Track 19.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 9894658,
+            "hash": "b66f098c120ccceed37106328c926f0e"
+        }],
+        "category": "cloned",
+        "fine_tuning": {
+            "model_id": null,
+            "language": null,
+            "is_allowed_to_fine_tune": false,
+            "fine_tuning_requested": false,
+            "finetuning_state": "not_started",
+            "verification_attempts": null,
+            "verification_failures": [],
+            "verification_attempts_count": 0,
+            "slice_ids": null,
+            "manual_verification": null,
+            "manual_verification_requested": false
+        },
+        "labels": {},
+        "description": null,
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/knvwQzFEGzZtDu4Hl7XpQQQ74NO2/voices/Rrm9EhD3fZjj20P5izEu/48929e6d-f3c4-4e24-96f3-c2f1b41e62ef.mp3",
+        "available_for_tiers": [],
+        "settings": null,
+        "sharing": null
+    }, {
+        "voice_id": "TTrDn9Ir1t2U368R8E3l",
+        "name": "Myriam",
+        "samples": null,
+        "category": "generated",
+        "fine_tuning": {
+            "model_id": null,
+            "language": null,
+            "is_allowed_to_fine_tune": false,
+            "fine_tuning_requested": false,
+            "finetuning_state": "not_started",
+            "verification_attempts": null,
+            "verification_failures": [],
+            "verification_attempts_count": 0,
+            "slice_ids": null,
+            "manual_verification": null,
+            "manual_verification_requested": false
+        },
+        "labels": {
+            "accent": "australian",
+            "age": "young",
+            "gender": "female"
+        },
+        "description": null,
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/knvwQzFEGzZtDu4Hl7XpQQQ74NO2/voices/TTrDn9Ir1t2U368R8E3l/f26cf3e0-a43c-4334-9a26-2df978916811.mp3",
+        "available_for_tiers": [],
+        "settings": null,
+        "sharing": {
+            "status": "copied",
+            "history_item_sample_id": null,
+            "enabled_in_library": false,
+            "original_voice_id": "MRCOs26Xkzk5vmsL1Q0D",
+            "public_owner_id": "34ee5125c3a8f9ed4b4a30c1e220d8fd1e08d5196f81feb19eb86a97018579ea",
+            "liked_by_count": 0,
+            "cloned_by_count": 0,
+            "whitelisted_emails": []
+        }
+    }, {
+        "voice_id": "VLO0gQRdDb0xkZGBqYu9",
+        "name": "scillia",
+        "samples": [{
+            "sample_id": "CMjZONHrYth2rNhbgeJ3",
+            "file_name": "scillia1.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 4624370,
+            "hash": "3185e6c8199dac9ccc76f18688393547"
+        }, {
+            "sample_id": "I7NoimfmBkVIOZwkPetK",
+            "file_name": "scillia2.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 1769291,
+            "hash": "be0e1a6452c6db7def10ec458a751341"
+        }, {
+            "sample_id": "KRWc4Si1GKm2a9usIe9j",
+            "file_name": "scillia3.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 2969910,
+            "hash": "54afec88b07118e095d5dcb12e8313ad"
+        }, {
+            "sample_id": "RwUtjZo0eXrTvX8bS0fJ",
+            "file_name": "scillia5.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 7723352,
+            "hash": "3faccc9573c908bfef81e0cbb444dd42"
+        }, {
+            "sample_id": "fyXoqowZLKBf2Cdcq0T0",
+            "file_name": "sctillia4-2.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 4437542,
+            "hash": "239329cf28b4c5331b92374baf411047"
+        }],
+        "category": "cloned",
+        "fine_tuning": {
+            "model_id": null,
+            "language": null,
+            "is_allowed_to_fine_tune": false,
+            "fine_tuning_requested": false,
+            "finetuning_state": "not_started",
+            "verification_attempts": null,
+            "verification_failures": [],
+            "verification_attempts_count": 0,
+            "slice_ids": null,
+            "manual_verification": null,
+            "manual_verification_requested": false
+        },
+        "labels": {},
+        "description": null,
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/knvwQzFEGzZtDu4Hl7XpQQQ74NO2/voices/VLO0gQRdDb0xkZGBqYu9/2ec3fb3d-1589-49de-8c65-0704a9ae6f1a.mp3",
+        "available_for_tiers": [],
+        "settings": null,
+        "sharing": null
+    }, {
+        "voice_id": "XLvJY0dlqRhbdmq8Z5JR",
+        "name": "lilo",
+        "samples": [{
+            "sample_id": "3o516fieoKavyfh6q8Q1",
+            "file_name": "t6j0ptvubb0wqae2qvtv.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 891601,
+            "hash": "c9e615d215324e2d1eff47502ffcaab4"
+        }, {
+            "sample_id": "6QbrgNqrzblhdi4N2kNm",
+            "file_name": "l0cyijb17gs713loyhwz.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 1218863,
+            "hash": "3657a6ea356c40e3de7684be2aac1758"
+        }, {
+            "sample_id": "AslpcKNvJV9TEMmuBKpM",
+            "file_name": "bnmgrsii2vqx3ehvo2jx.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 497256,
+            "hash": "4296c7beb74c7f16ca89aa57e8f42f1d"
+        }, {
+            "sample_id": "BBvK5F7Y8A2qYYiCN1tx",
+            "file_name": "rwxshlyr19hrz8pyl6zz.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 7966605,
+            "hash": "2928668a24e3b87f7a204d14c615d400"
+        }, {
+            "sample_id": "RY2GvsstwCeaUzFLtisw",
+            "file_name": "a65dfgz8cn2dkjfs5dgr.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 838311,
+            "hash": "cfb09cc8511dd256e7763cd49a9abf5a"
+        }, {
+            "sample_id": "ShtcF8IFoqpd5eSW4ivU",
+            "file_name": "oxrczkdjti23nhekgkwp.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 629540,
+            "hash": "b49ff185ec9b4ab4e0e9ab5cdfe5cdfa"
+        }, {
+            "sample_id": "UkDcLtb8rA2Tzyw5SdKe",
+            "file_name": "zpx6xqdn5kazcwoafxq4.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 519826,
+            "hash": "e3ca0c3fea8a6c694f08e7f008ce977a"
+        }, {
+            "sample_id": "amcgzwAsVSdTf7dbw8KA",
+            "file_name": "lta4t21wa1vt1iwaypvp.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 534245,
+            "hash": "de10ce619eef1246006b548eccf6326f"
+        }, {
+            "sample_id": "d9rReJWNwKyvEByRTfqq",
+            "file_name": "kbi52zyd0p3jxivz65ds.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 1252717,
+            "hash": "14d0c4ad9b13a27d6dc187bbd98a7c92"
+        }, {
+            "sample_id": "i1hIx1DBcwNY3TbqzIwt",
+            "file_name": "jtfy0bkq79avagzn1iz3.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 2437632,
+            "hash": "3274b0ffcd4b481d86bb7a5076ce0235"
+        }, {
+            "sample_id": "lZ5WuE3yEHj2xzA0ccKd",
+            "file_name": "ycm5u3nwi9gfo2gsmtfr.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 913543,
+            "hash": "189214683d299583d48e91e134258e7c"
+        }, {
+            "sample_id": "qae6dWrAcjf7usOJ2LDt",
+            "file_name": "pmmpfrwmfvarlezhz2da.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 1097863,
+            "hash": "27cf6e2b0aad0d1e997cd93f8d8732ee"
+        }, {
+            "sample_id": "reBR0PgqFpxoXZZZgGcV",
+            "file_name": "wtbnvyrhdqqbdm0h0voo.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 1412587,
+            "hash": "86bc08eea85ccfde87255a5d345b9b31"
+        }, {
+            "sample_id": "sBvkt07kzxsIHDITMgKl",
+            "file_name": "gia46sjcqofsqacsq87p.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 415754,
+            "hash": "e8431591d82dea4e296999b704fffedd"
+        }, {
+            "sample_id": "sIyIFcyCNEIhV2vlU95i",
+            "file_name": "sd30lgnovrcylzeapehz.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 803202,
+            "hash": "46d8e4d8dd36bd90a6b2579bfbacf674"
+        }, {
+            "sample_id": "vSBuQVKzn2pPdNBOXxcU",
+            "file_name": "vzbxzx0bmhdutoerzoiu.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 2046422,
+            "hash": "bbbd21f8b4acd3b09d4a4c1b1dc015e3"
+        }],
+        "category": "cloned",
+        "fine_tuning": {
+            "model_id": null,
+            "language": null,
+            "is_allowed_to_fine_tune": false,
+            "fine_tuning_requested": false,
+            "finetuning_state": "not_started",
+            "verification_attempts": null,
+            "verification_failures": [],
+            "verification_attempts_count": 0,
+            "slice_ids": null,
+            "manual_verification": null,
+            "manual_verification_requested": false
+        },
+        "labels": {},
+        "description": "",
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/knvwQzFEGzZtDu4Hl7XpQQQ74NO2/voices/XLvJY0dlqRhbdmq8Z5JR/9ab7a0b7-68ac-45fd-b3bc-af8c377e02e5.mp3",
+        "available_for_tiers": [],
+        "settings": null,
+        "sharing": null
+    }, {
+        "voice_id": "bxkaxEvW3XiS6waTWqmJ",
+        "name": "kiiba",
+        "samples": [{
+            "sample_id": "0jZrblvpAuDNkk01ayM8",
+            "file_name": "untitled - Track 21.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 7818566,
+            "hash": "5bae359f5e70c65f3677ae089800769e"
+        }, {
+            "sample_id": "2396TdzkgzR1DT5Q77Yi",
+            "file_name": "untitled - Track 18.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 5944318,
+            "hash": "2b4f53fb6a60746945ae0ee9d3e2fcec"
+        }, {
+            "sample_id": "65Jk179rj8aG9qPw4DcU",
+            "file_name": "untitled - Track 22.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 9350194,
+            "hash": "f70757ba26dd32babc95d6a499d0231b"
+        }, {
+            "sample_id": "6874luT8Uwc9LMKkjhqM",
+            "file_name": "untitled - Track 15.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 7370782,
+            "hash": "b3fd1852548533c841e5d5d32b862bd9"
+        }, {
+            "sample_id": "BuMZajpFmnZrtTOxmbxX",
+            "file_name": "untitled - Track 24.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 7065474,
+            "hash": "83821514316d1bf9c483a3e215dfd1e0"
+        }, {
+            "sample_id": "ERDgOaUBNlYfFTU83LjD",
+            "file_name": "untitled - Track 20.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 6761014,
+            "hash": "7db7c044d0b63337722543c78de60abe"
+        }, {
+            "sample_id": "EpI6yLBhwGxIgQ2FPevm",
+            "file_name": "untitled - Track 16.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 7737150,
+            "hash": "17cfb387bde184564ab611bc94c661e3"
+        }, {
+            "sample_id": "H6BX816KEXKZ80bJADBy",
+            "file_name": "untitled - Track 13.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 8530102,
+            "hash": "9bb88e0f95b50df4475486de85998cc3"
+        }, {
+            "sample_id": "HVudpCI4sYyPbKSBm3H4",
+            "file_name": "untitled - Track 14.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 5766222,
+            "hash": "cd89d23c338c582f5765fa0bde81389b"
+        }, {
+            "sample_id": "JJ7C4TauZHPiSoX2hQlf",
+            "file_name": "untitled - Track 8.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 6620234,
+            "hash": "64a15a946a646a7715993281aa1ce186"
+        }, {
+            "sample_id": "K4F3JKOYurqhNy70Ovus",
+            "file_name": "untitled - Track 3.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 6722002,
+            "hash": "797de27be589e0be07066e7b757c85a8"
+        }, {
+            "sample_id": "NMCeYSFgEDs0evrD4Wa4",
+            "file_name": "untitled - Track 2.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 8145078,
+            "hash": "af5111ebf9cb9266b1b7b180674e7f7a"
+        }, {
+            "sample_id": "OS8XLqexUtri9p0dN4FH",
+            "file_name": "untitled - Track 25.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 7817718,
+            "hash": "58e74e54e87abe184c8d3f88dab9df37"
+        }, {
+            "sample_id": "SRju2rRl2jW99iuOAwBI",
+            "file_name": "untitled - Track 19.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 6271674,
+            "hash": "f646cc73290552683a645949a4ad2ad2"
+        }, {
+            "sample_id": "StlMVjY5J5AHwhT489HO",
+            "file_name": "untitled - Track 10.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 5358298,
+            "hash": "296734045ee8d7ef62d0e64e0e4ae887"
+        }, {
+            "sample_id": "TMbHvgSSHXptr95XlhDL",
+            "file_name": "untitled - Track 17.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 6739814,
+            "hash": "3d23b9f8b632d821264e0e1946879017"
+        }, {
+            "sample_id": "a8JqafgNHnDUAeNS7Zd3",
+            "file_name": "untitled - Track 4.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 9568150,
+            "hash": "b92b0601f723a63942b033e72692057f"
+        }, {
+            "sample_id": "bzILtNbSC70dW38uJOSF",
+            "file_name": "untitled - Track 23.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 5640706,
+            "hash": "3cb0e26cc70978354001589213a7a714"
+        }, {
+            "sample_id": "g7v10lyorTloRgtL5yjX",
+            "file_name": "untitled - Track 1.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 9568150,
+            "hash": "b92b0601f723a63942b033e72692057f"
+        }, {
+            "sample_id": "ixKnzQFf4u36AJCBsG8g",
+            "file_name": "untitled - Track 6.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 8982130,
+            "hash": "98102c0104e5980a9c785eb129480f16"
+        }, {
+            "sample_id": "pYeESmgBpwUqv3s4OSVv",
+            "file_name": "untitled - Track 11.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 6454858,
+            "hash": "5e635e7bca8569143ea86f6f57081084"
+        }, {
+            "sample_id": "taUmwgkYTWYYdMva6kp8",
+            "file_name": "untitled - Track 9.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 5946014,
+            "hash": "25e0ae8147fafe5ced292873cbda96cd"
+        }, {
+            "sample_id": "wdzA0R70yyuiL40zloiT",
+            "file_name": "untitled - Track 7.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 6108846,
+            "hash": "f0e18e55c22379162014b920d1db0e29"
+        }, {
+            "sample_id": "zCpHlwMEQNjSIfgMv2y6",
+            "file_name": "untitled - Track 12.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 5761982,
+            "hash": "5d215c57e001eda9450e3549fd463f9f"
+        }, {
+            "sample_id": "zsX3aHzE6DdVEjYGeosc",
+            "file_name": "untitled - Track 5.mp3",
+            "mime_type": "audio/mpeg",
+            "size_bytes": 7385198,
+            "hash": "3cf538adc4a87912b05014e34c67203f"
+        }],
+        "category": "cloned",
+        "fine_tuning": {
+            "model_id": null,
+            "language": null,
+            "is_allowed_to_fine_tune": false,
+            "fine_tuning_requested": false,
+            "finetuning_state": "not_started",
+            "verification_attempts": null,
+            "verification_failures": [],
+            "verification_attempts_count": 0,
+            "slice_ids": null,
+            "manual_verification": null,
+            "manual_verification_requested": false
+        },
+        "labels": {},
+        "description": null,
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/knvwQzFEGzZtDu4Hl7XpQQQ74NO2/voices/bxkaxEvW3XiS6waTWqmJ/ff5c4e59-0f8a-411a-9ec1-9831cf207869.mp3",
+        "available_for_tiers": [],
+        "settings": null,
+        "sharing": null
+    }, {
+        "voice_id": "kyQrbOCDiYKVwfhYDB1P",
+        "name": "Vince",
+        "samples": null,
+        "category": "generated",
+        "fine_tuning": {
+            "model_id": null,
+            "language": null,
+            "is_allowed_to_fine_tune": false,
+            "fine_tuning_requested": false,
+            "finetuning_state": "not_started",
+            "verification_attempts": null,
+            "verification_failures": [],
+            "verification_attempts_count": 0,
+            "slice_ids": null,
+            "manual_verification": null,
+            "manual_verification_requested": false
+        },
+        "labels": {
+            "accent": "british",
+            "age": "middle_aged",
+            "gender": "male"
+        },
+        "description": "",
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/knvwQzFEGzZtDu4Hl7XpQQQ74NO2/voices/kyQrbOCDiYKVwfhYDB1P/42ed5b7c-86b3-40ff-b1b4-b8a8492ef773.mp3",
+        "available_for_tiers": [],
+        "settings": null,
+        "sharing": {
+            "status": "copied",
+            "history_item_sample_id": null,
+            "enabled_in_library": false,
+            "original_voice_id": "RAgTrai7USMQFTyr6Qdg",
+            "public_owner_id": "9ad8a0e0919d3206eabd2485d79f503178aaad3f993962c01354a8557fd44941",
+            "liked_by_count": 0,
+            "cloned_by_count": 0,
+            "whitelisted_emails": []
+        }
+    }]
+}

@@ -1,0 +1,29 @@
+.xr {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+}
+.xr:not(.enabled) {
+  display: none;
+}
+.xr .btn {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+  background-image: linear-gradient(to bottom, #333, #111);
+  border-radius: 15px;
+  border: 2px solid #00000080;
+  cursor: pointer;
+}
+.xr .btn:hover {
+  background-image: linear-gradient(to bottom, #2196F3, #1976D2);
+}
+.xr .btn:active {
+  filter: brightness(0.8);
+}
+.xr .btn img {
+  object-fit: contain;
+  filter: invert(1);
+  flex: 1;
+}

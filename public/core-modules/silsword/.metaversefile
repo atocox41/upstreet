@@ -1,0 +1,55 @@
+{
+  "name": "silsword",
+  "description": "silsword",
+  "start_url": "index.js",
+  "description": "A sword of immense power, imbued with the Rose of the Basilisk. It transform into any shape needed. In exchange, the owner is cursed to go up the street.",
+  "components": [
+    {
+      "key": "physics",
+      "value": true
+    },
+    {
+      "key": "animation",
+      "value": false
+    },
+    {
+      "key": "aim",
+      "value": {
+        "appAnimation": "Sword_Activate",
+        "characterAnimation": "swordSideIdle",
+        "boneAttachment": "leftHand",
+        "position": [-0.055, -0.01, -0.18],
+        "quaternion": [0.7071067811865475, 0, 0, 0.7071067811865476],
+        "scale": [1, 1, 1]
+      }
+    },
+    {
+      "key": "wear",
+      "value": {
+        "boneAttachment": "spine",
+        "position": [-0.3, 0.7, -0.15],
+        "quaternion": [0, 0, 0.9510565162951536, -0.30901699437494734]
+      }
+    },
+    {
+      "key": "use",
+      "value": {
+        "animationCombo": [
+          "swordSideSlash",
+          "swordSideSlashStep",
+          "swordTopDownSlash",
+          "swordTopDownSlashStep"
+        ],
+        "behavior": "sword",
+        "boneAttachment": "leftHand",
+        "trail": [
+          [0, 0.2, 0],
+          [0, 1.4, 0]
+        ],
+        "position": [-0.055, -0.01, -0.18],
+        "quaternion": [0.7071067811865475, 0, 0, 0.7071067811865476],
+        "scale": [1, 1, 1]
+      }
+    }
+  ]
+}

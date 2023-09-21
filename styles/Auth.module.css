@@ -1,0 +1,9 @@
+.authApp {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+}
+.textarea {
+  min-width: 400px;
+  min-height: 200px;
+}

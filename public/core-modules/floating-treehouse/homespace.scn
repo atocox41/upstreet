@@ -1,0 +1,182 @@
+{
+  "objects": [
+    {
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "components": [
+        {
+          "key": "sunLight",
+          "value": {
+            "args": [[255, 255, 255], 5],
+            "position": [1, 10, 3],
+            "shadow": [50, 4096, 0.1, 1000, 0, 0.2]
+          }
+        },
+        {
+          "key": "ambientLight",
+          "value": {
+            "args": [[30, 100, 255], 1]
+          }
+        }
+      ],
+      "start_url": "https://tcm390.github.io/sun-skydome/"
+    },
+     {
+      "type": "application/wind",
+      "content": {
+        "windType": "directional",
+        "direction": [-1, 0, 0],
+        "windForce": 0.5,
+        "noiseScale": 1,
+        "windFrequency": 1
+      }
+    },
+    {
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "start_url": "/floating-treehouse/"
+    },
+    {
+      "components": [
+        {
+          "key": "start",
+          "value": {
+            "y": -200
+          }
+        },
+        {
+          "key": "end",
+          "value": {
+          }
+        },
+        {
+          "key": "reset",
+          "value": {
+            "y": 10
+          }
+        }
+      ],
+      "start_url": "https://webaverse.github.io/player-position-reset/"
+    },
+    {
+      "type": "application/spawnpoint",
+      "content": {
+        "position": [
+          -27,
+          1,
+          0.5
+        ],
+        "quaternion": [
+          0,
+          0.707,
+          0,
+          0.707
+        ]
+      }
+    },
+    {
+      "position": [
+        -4.5,
+        0.3,
+        2
+      ],
+      "quaternion": [
+        0,
+        0.708,
+        0,
+        0.706
+      ],
+      "start_url": "https://webaverse.github.io/characters/drake.npc"
+    },
+    {
+      "position": [
+        8,
+        1,
+        3.5
+      ],
+      "quaternion": [
+        0,
+        0.708,
+        0,
+        0.706
+      ],
+      "start_url": "https://webaverse.github.io/characters/hyacinth.npc"
+    },
+    {
+      "position": [
+        17,
+        -2.1,
+        -2
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "start_url": "https://webaverse.github.io/fox/"
+    },
+    {
+      "position": [
+        32,
+        -2,
+        0.35
+      ],
+      "quaternion": [
+        0,
+        0.708,
+        0,
+        0.706
+      ],
+      "start_url": "https://webaverse.github.io/silsword/"
+    },
+    {
+      "position": [
+        5,
+        -4,
+        25
+      ],
+      "quaternion": [
+        0,
+        0.707,
+        0,
+        0.707
+      ],
+      "start_url": "https://webaverse.github.io/uzi/"
+    },
+    {
+      "position": [
+        -2,
+        -1,
+        6.5
+      ],
+      "quaternion": [
+        0,
+        0.707,
+        0,
+        0.707
+      ],
+      "start_url": "https://webaverse.github.io/pistol/"
+    },
+    {
+      "position": [
+        13,
+        10,
+        -6.4
+      ],
+      "quaternion": [
+        0,
+        0.707,
+        0,
+        0.707
+      ],
+      "start_url": "https://webaverse.github.io/bow/"
+    }
+  ]
+}

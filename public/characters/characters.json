@@ -1,0 +1,45 @@
+{
+  "packs": [
+    {
+      "name": "upstreet",
+      "characters": [
+        "scillia.npc",
+        "scillia_psx.npc",
+        "drake.npc",
+        "hyacinth.npc",
+        "juniper.npc",
+        "anemone.npc"
+      ]
+    },
+    {
+      "name": "vipe",
+      "characters": [
+        "default_569.npc",
+        "default_1934.npc",
+        "default_2185.npc"
+      ]
+    },
+    {
+      "name": "isekai",
+      "characters": [
+        "uni.npc"
+      ]
+    },
+    {
+      "name": "charactercards",
+      "characters": [
+        "the_lottery_ticket.npc"
+      ]
+    },
+    {
+      "name": "test",
+      "characters": [
+        "default-male.npc",
+        "default-female.npc",
+        "male.npc",
+        "female.npc",
+        "openpose.npc"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+name = "token"
+workers_dev = true
+compatibility_date = "2023-06-01"
+# Add your account ID here
+
+main = "token.mjs"
+# node_compat = true

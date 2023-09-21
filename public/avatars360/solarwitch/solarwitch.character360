@@ -1,0 +1,7 @@
+{
+  "name": "Solar Witch",
+  "description": "A solar witch with blue hair.",
+  "characterImageUrl": "characterImageUrl.png",
+  "character360ImageUrl": "character360ImageUrl.png",
+  "characterEmotionUrl": "characterEmotionUrl.png"
+}

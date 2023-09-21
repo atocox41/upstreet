@@ -1,0 +1,105 @@
+
+.chatContainer {
+  list-style-type: none;
+  margin: 0 0 0 0;
+  padding: 0;
+}
+
+.chatContainer li {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.chatBubble {
+  position: relative;
+  display: flex;
+  margin: 6px 0 10px 0;
+  padding: 5px 10px 4px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  background-color: #222;
+  color: #efefef;
+  max-width: calc(100% - 32px);
+}
+
+.chatBubble.user {
+  background-color: #248bf5;
+}
+
+.deleteButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4px;
+  border: none;
+  border-radius: 50%;
+  font-size: 14px;
+  background: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.chatContainer li:hover .deleteButton .icon * {
+  fill: #efefef;
+}
+
+.deleteButton .icon {
+  height: 12px;
+  width: 12px;
+}
+
+.deleteButton .icon * {
+  fill: #333333;
+}
+
+.deleteButton:hover {
+  transform: scale(1.2);
+}
+
+
+.chatMessage {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.chatUser {
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+  color: rgba(255,255,255,0.8);
+}
+
+.chatValue {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: rgba(255,255,255,0.8);
+}
+
+.chatTimestamp {
+  font-size: 10px;
+  color: rgba(255,255,255,0.6);
+}
+
+.searchInput {
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 4px;
+  background: none;
+  color: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); */
+  width: 100%;
+  margin-top: 4px;
+}
+
+.sysMessage {
+  color: #efefef;
+  text-align: left;
+  width: 100%;
+}
+
+.searchInput:focus {
+  outline: none;
+}

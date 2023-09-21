@@ -1,0 +1,25 @@
+{
+  "name": "title-deed",
+  "description": "A title deed allowing the player to claim land in the world.",
+  "modelUrl": "MAP_GLB.glb",
+  "components": [
+    {
+      "key": "wear",
+      "value": {
+        "boneAttachment": "leftHand",
+        "position": [0, -0.02, 0],
+        "quaternion": [0.7071067811865475, 0, 0, 0.7071067811865476]
+      }
+    },
+    {
+      "key": "use",
+      "value": {
+        "animation": "magic",
+        "boneAttachment": "leftHand",
+        "position": [0, 0, 0],
+        "quaternion": [0.7071067811865475, 0, 0, 0.7071067811865476],
+        "scale": [1, 1, 1]
+      }
+    }
+  ]
+}

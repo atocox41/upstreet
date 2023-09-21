@@ -1,0 +1,34 @@
+.levelChat {
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  display: none;
+}
+.levelChat .messages {
+  position: relative;
+  margin-top: 15px;
+  padding: 15px 10px;
+  background-color: #00000080;
+  border-top-right-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.levelChat .messages .message {
+  display: flex;
+  margin-bottom: 10px;
+  /* text-shadow: 0 0 10px #FFF; */
+}
+.levelChat .messages .message .name {
+  color: #9c27b0;
+  font-weight: 900;
+}
+.levelChat .messages .message .content {
+  color: #FFFFFFCC;
+  white-space: pre-wrap;
+}

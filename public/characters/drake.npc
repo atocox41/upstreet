@@ -1,0 +1,10 @@
+{
+  "name": "Drake",
+  "previewUrl": "./images/characters/upstreet/small/drake.png",
+  "avatarUrl": "/avatars/Drake_hacker_v8_Guilty.vrm",
+  "voice": "tiktalket:Shining Armor",
+  "voicePack": "Bryce voice pack",
+  "class": "Neural Hacker",
+  "bio": "He is not only narcissistic but also delusional. He believes he's the best at everything, even when he clearly fails. He's also a pathological liar, often making up stories to make himself look better.",
+  "themeSongUrl": "https://webaverse.github.io/music/themes/129079005-im-gonna-find-it-mystery-sci-f.mp3"
+}

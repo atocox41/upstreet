@@ -1,0 +1,26 @@
+.wiki {
+  --size: 640px;
+
+  position: fixed;
+  top: 0;
+  /* bottom: 0; */
+  right: 0;
+  /* right: 0; */
+  display: flex;
+  width: var(--size);
+  height: 100vh;
+  flex-direction: column;
+  transition: transform 0.3s cubic-bezier(0, 1, 0, 1);
+  overflow: hidden;
+}
+.wiki:not(.open) {
+  /* display: none; */
+  transform: translate3d(var(--size), 0, 0);
+}
+.wiki .iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  min-height: 100%;
+}

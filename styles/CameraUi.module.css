@@ -1,0 +1,62 @@
+.cameraUi {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+}
+.cameraUi .chevron {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cameraUi .chevron .icon {
+  width: 30px;
+  height: 30px;
+}
+.cameraUi .chevron.left {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  transform: rotateZ(0);
+}
+.cameraUi .chevron.right {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transform: rotateZ(-180deg);
+}
+.cameraUi .chevron.up {
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: rotateZ(90deg);
+}
+.cameraUi .chevron.down {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: rotateZ(-90deg);
+}
+.cameraUi .chevron.topLeft {
+  top: 0;
+  left: 0;
+  transform: rotateZ(45deg);
+}
+.cameraUi .chevron.topRight {
+  top: 0;
+  right: 0;
+  transform: rotateZ(135deg);
+}
+.cameraUi .chevron.bottomRight {
+  bottom: 0;
+  right: 0;
+  transform: rotateZ(-135deg);
+}
+.cameraUi .chevron.bottomLeft {
+  bottom: 0;
+  left: 0;
+  transform: rotateZ(-45deg);
+}

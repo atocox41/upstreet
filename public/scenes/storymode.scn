@@ -1,0 +1,42 @@
+{
+  "name": "The Origin Cave",
+  "description": "An anime-style cave next to a river with a majestic waterfall pouring into it, creating a symphony of water and mist. The cave entrance, adorned with ancient carvings, is draped in vines and moss, hinting at the passage of time. The glow of phosphorescent fungi casts a surreal, otherworldly aura over the scene. The crystal-clear water of the river reflects the sunlight, creating dancing shadows on the cave's rocky walls. In the distance, a forest of cherry blossoms adds a touch of vibrant pink to the landscape, framing the cave as if it were a portal to another realm.",
+  "objects": [
+    {
+      "type": "application/light",
+      "content": {
+        "lightType": "ambient",
+        "args": [[255, 255, 255],1]
+      }
+    },
+    {
+      "position": [1, 0, -2],
+      "quaternion": [0, 0, 0, 1],
+      "start_url": "/public/characters/yami-scilly.npc"
+    },
+    {
+      "position": [-1, 0, -2],
+      "quaternion": [0, 0, 0, 1],
+      "start_url": "/public/characters/drake.npc"
+    },
+    {
+      "position": [-2, 0, -2],
+      "quaternion": [0, 0, 0, 1],
+      "start_url": "/public/characters/anemone.npc"
+    },
+    {
+      "position": [-3, 0, -2],
+      "quaternion": [0, 0, 0, 1],
+      "start_url": "/public/characters/buster.npc"
+    },
+    {
+      "position": [2, 0, -2],
+      "quaternion": [0, 0, 0, 1],
+      "start_url": "/public/characters/citrine.npc"
+    },
+    {
+      "type": "application/zinestory",
+      "content": {}
+    }
+  ]
+}

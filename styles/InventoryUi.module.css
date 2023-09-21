@@ -1,0 +1,421 @@
+.row {
+  display: flex;
+}
+.spacer {
+  flex: 1;
+}
+.label {
+  display: flex;
+}
+.label .text {
+  display: flex;
+  height: 26px;
+  margin: auto 0;
+  margin-right: 10px;
+  margin-top: 0;
+  font-family: 'PlazaRegular';
+  font-size: 13px;
+  color: #FFF;
+  align-items: center;
+}
+.label .select {
+  margin: auto 0;
+}
+.row .button {
+  position: relative;
+  display: flex;
+  padding: 5px 10px;
+  margin-bottom: 1px;
+  color: #FFF;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 2s cubic-bezier(0, 1, 0, 1);
+  pointer-events: all;
+}
+.row .button .background
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to bottom, #333, #111);
+  transform: skewX(-22deg);
+}
+.row .button .text {
+  position: relative;
+  font-family: 'Exo';
+}
+.row .button .background {
+  border: 2px solid transparent;
+}
+.row .button .background {
+  border-radius: 5px;
+  transition: all 0.3s cubic-bezier(0, 1, 0, 1);
+}
+.row .button:hover .background {
+  background-image: none;
+  background-color: #2196F3;
+  border-color: #FFFFFF40;
+}
+.row .button:active .background {
+  background-color: #1976D2;
+}
+.row .button:disabled {
+  color: #FFFFFF60;
+  pointer-events: none;
+}
+
+.modeUi,
+.locationUi,
+.mapUi .parcelUi,
+.mapUi .titleDeedUi,
+.mapUi .tooltipUi
+{
+  margin-left: auto;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background-image: linear-gradient(to bottom, #333, #111);
+  border-radius: 5px;
+  pointer-events: all;
+}
+.mapUi {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  flex: 1;
+  overflow-y: hidden;
+}
+.coords {
+  padding: 5px 10px;
+  font-family: 'Exo';
+  background-color: #111;
+  color: #FFF;
+}
+.tooltip {
+  display: flex;
+  color: #FFFFFF60;
+  justify-content: center;
+}
+.titleDeedUi {
+  overflow-y: auto;
+  /* flex: 1; */
+}
+
+.loginModal {
+  position: absolute;
+  display: flex;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  padding: 30px;
+  background-image: linear-gradient(to bottom, #222, #111111);
+  pointer-events: all;
+  cursor: default;
+  overflow-y: auto;
+}
+
+/* */
+
+.deployUi {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  padding: 15px;
+  background-image: linear-gradient(to bottom, #111, #333);
+  color: #FFF;
+  font-family: 'Exo';
+  z-index: 2;
+}
+.deployUi .textarea {
+  width: 400px;
+  height: 300px;
+}
+.deployUi .textarea:disabled {
+  background-color: #FFF;
+  resize: none;
+  overflow: auto;
+}
+
+.deployUi .row {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.deployUi .label {
+  margin-right: auto;
+}
+.deployUi .icon {
+  display: flex;
+  cursor: pointer;
+}
+.deployUi .icon:hover {
+  opacity: 0.75;
+}
+.deployUi .icon:active {
+  opacity: 0.5;
+}
+.deployUi .icon .img {
+  width: 16px;
+  height: 16px;
+  filter: invert(1);
+}
+
+/* */
+
+.inventoryUi {
+  display: flex;
+  position: fixed;
+  top: 10px;
+  bottom: 10px;
+  right: 10px;
+  width: 400px;
+  padding: 15px;
+  background-image: linear-gradient(to bottom, #111, #333);
+  border: 2px solid #FFFFFF10;
+  border-radius: 10px;
+  color: #FFF;
+  font-family: 'Exo';
+  flex-direction: column;
+  z-index: 2;
+  pointer-events: all;
+}
+.inventoryUi .row {
+  display: flex;
+  align-items: center;
+}
+.inventoryUi .icon {
+  margin-left: auto;
+  cursor: pointer;
+  user-select: none;
+}
+.inventoryUi .icon .img {
+  width: 12px;
+  height: 12px;
+  filter: invert(1);
+  opacity: 0.5;
+}
+.inventoryUi .icon:hover .img {
+  opacity: 1;
+}
+.inventoryUi .h {
+  font-family: 'WinchesterCaps';
+  font-size: 16px;
+  color: #FFF;
+}
+.inventoryUi .tabs {
+  display: flex;
+}
+.inventoryUi .tabs .tab {
+  display: flex;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-bottom: 2px solid transparent;
+  justify-content: center;
+  color: #FFFFFF80;
+  cursor: pointer;
+  user-select: none;
+  flex: 1;
+}
+.inventoryUi .tabs .tab:hover {
+  color: #FFF;
+}
+.inventoryUi .tabs .tab.selected {
+  color: #FFF;
+  border-bottom: 2px solid #FFF;
+}
+
+.inventoryUi .content {
+  height: 300px;
+}
+
+.inventoryUi .placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  /* margin: 0 auto; */
+  font-family: 'PlazaRegular';
+  font-size: 20px;
+}
+
+.inventoryUi .item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+.inventoryUi .item:hover {
+  background-color: #222;
+  border-radius: 5px;
+}
+.inventoryUi .previewImg,
+.inventoryUi .previewIcon
+{
+  display: flex;
+  width: 64px;
+  height: 64px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+.inventoryUi .previewIcon {
+  filter: invert(1);
+}
+.inventoryUi .chooseImg {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+.inventoryUi .placeholderImg {
+  filter: invert(1);
+}
+.inventoryUi .name {
+  flex: 1;
+  padding: 0 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.inventoryUi .category {
+  max-width: 150px;
+  padding: 0 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.inventoryUi .btn {
+  display: flex;
+  padding: 5px;
+  margin-right: 5px;
+  background-image: linear-gradient(to bottom, #111, #000);
+  border: 1px solid #FFFFFF20;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.inventoryUi .btn:hover {
+  background-image: linear-gradient(to bottom, #222, #111);
+}
+.inventoryUi .btn:active {
+  background-image: linear-gradient(to bottom, #333, #222);
+}
+
+.inventoryUi .btn .chevron {
+  width: 12px;
+  height: 12px;
+  margin: auto 0;
+  margin-left: 5px;
+  filter: invert(1);
+  transform: rotateZ(-90deg);
+}
+
+.inventoryUi .iconBtn {
+  cursor: pointer;
+}
+.inventoryUi .iconBtn .img {
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+  filter: invert(1);
+}
+.inventoryUi .iconBtn:hover .img {
+  opacity: 0.75;
+}
+.inventoryUi .iconBtn:active .img {
+  opacity: 0.5;
+}
+
+.inventoryUi .content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.inventoryUi .createUi .input {
+  width: 100%;
+  padding: 5px 10px;
+  border: 0;
+  border-bottom: 2px solid #CCC;
+  background: transparent;
+  color: #FFF;
+  font-family: 'Exo';
+  font-size: 16px;
+  outline: none;
+}
+.inventoryUi .createUi .input:hover {
+  border-bottom-color: #FFF;
+}
+
+.inventoryUi .createUi .label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.inventoryUi .createUi .label .text {
+  font-family: 'WinchesterCaps';
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.inventoryUi .createUi .textarea {
+  width: 100%;
+  height: 200px;
+}
+
+.inventoryUi .createUi .row {
+  margin-bottom: 20px;
+}
+
+.inventoryUi .createUi .middle {
+  align-items: center;
+}
+
+/* */
+
+.titleDeeds {
+  display: flex;
+  flex-direction: column;
+}
+.titleDeeds .titleDeed {
+  display: flex;
+  color: #FFF;
+}
+.titleDeeds .titleDeed .name {
+  
+}
+.titleDeeds .titleDeed .location {
+  margin-left: 5px;
+  color: #FFFFFF80;
+  cursor: pointer;
+  pointer-events: all;
+  user-select: none;
+}
+.titleDeeds .titleDeed .location:hover {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+/* */
+
+.backButton {
+  margin-right: auto;
+  cursor: pointer;
+}
+.backButton .img {
+  width: 24px;
+  height: 24px;
+  transform: rotateZ(90deg);
+  filter: invert(1);
+}
+.backButton:hover .img {
+  opacity: 0.75;
+}
+.backButton:active .img {
+  opacity: 0.5;
+}
